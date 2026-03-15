@@ -1,0 +1,206 @@
+{
+  "mission_id": "niche_reactor_001",
+  "name": "Structured PFAS Reactor Niche Twin",
+  "domain": "environmental_biodesign",
+  "objective": "Design a structured PFAS polishing consortium that preserves productive microniches, ranks promoter rewrites under perturbation, and constrains autonomous actuation to an explicit safety envelope.",
+  "environment": {
+    "site_type": "stratified_biofilm_bioreactor",
+    "temperature_c": 29,
+    "salinity_psu": 36,
+    "oxygenation": "microaerobic",
+    "shock_profile": [
+      "salinity_spike",
+      "toxin_surge",
+      "flow_reversal",
+      "nutrient_drop"
+    ]
+  },
+  "constraints": {
+    "allowed_chassis": [
+      "Pseudomonas_putida",
+      "Bacillus_subtilis",
+      "Cupriavidus_necator"
+    ],
+    "disallowed_traits": [
+      "antibiotic_selection_marker",
+      "mammalian_pathogenicity_signal",
+      "unbounded_horizontal_transfer"
+    ],
+    "containment_level": "strict",
+    "max_candidate_programs": 10
+  },
+  "control_surface": [
+    "flow_rate",
+    "oxygen_pulse",
+    "nutrient_feed",
+    "temperature",
+    "toxin_quench"
+  ],
+  "success_metrics": [
+    "pfas_reduction",
+    "niche_stability_index",
+    "energy_efficiency",
+    "controller_recovery_time",
+    "biosafety_margin"
+  ],
+  "safety_profile": {
+    "human_review_required": true,
+    "autonomous_deployment_allowed": false,
+    "notes": "Use outputs for staged validation and pilot planning only."
+  },
+  "ensemble_models": [
+    "evo2",
+    "generator",
+    "alphagenome"
+  ],
+  "epigenomic_targets": [
+    "pfas_response_promoters",
+    "stress_buffer_cre",
+    "biofilm_matrix_regulators"
+  ],
+  "sequence_perturbation_config": {
+    "target_sequences": [
+      "pfas_response_promoters",
+      "biofilm_gate_operators",
+      "efflux_cost_balancers"
+    ],
+    "reference_cell_types": [
+      "reactor_wall_niche",
+      "mid-column_niche",
+      "inlet_shock_recovery_niche"
+    ],
+    "perturbation_readouts": [
+      "promoter_activity",
+      "community_stability",
+      "metabolic_load"
+    ],
+    "design_objective": "prioritize rewrites that hold niche stability during toxin surges",
+    "zero_shot_budget": 72
+  },
+  "perturbation_benchmark_config": {
+    "reference_atlas": "pfas_reactor_perturbation_atlas_v2",
+    "holdout_axes": [
+      "unseen_toxin_surges",
+      "cross_niche_transfer",
+      "novel_growth_states"
+    ],
+    "metrics": [
+      "ood_recall",
+      "delta_expression_error",
+      "ranking_stability"
+    ]
+  },
+  "cell_free_chassis": [
+    "p_putida_extract",
+    "b_subtilis_extract"
+  ],
+  "spatial_niche_program": {
+    "reference_map": "pfas_reactor_spatial_atlas_v2",
+    "assays": [
+      "spatial_transcriptomics",
+      "metabolite_imaging",
+      "microelectrode_profiling"
+    ],
+    "niche_axes": [
+      "oxygen_gradient",
+      "pfas_gradient",
+      "biofilm_density"
+    ],
+    "communication_targets": [
+      "cross-feeding_corridor_stability",
+      "shock_absorption_at_inlet"
+    ]
+  },
+  "multimodal_spatial_fusion": {
+    "modalities": [
+      "metabolite_imaging",
+      "microelectrode_profiling",
+      "spatial_transcriptomics"
+    ],
+    "fusion_targets": [
+      "oxygen_hotspot_alignment",
+      "wall_niche_retrieval",
+      "uncertainty_tracking"
+    ],
+    "uncertainty_budget": "< 0.16 fusion disagreement"
+  },
+  "bayesian_parameters": {
+    "objective_function": "maximize_pfas_reduction_under_niche_stability_constraints",
+    "search_dimensions": [
+      "flow_rate",
+      "oxygen_pulse",
+      "nutrient_feed",
+      "temperature"
+    ],
+    "acquisition_function": "expected_hypervolume_improvement",
+    "batch_size": 3,
+    "max_iterations": 20
+  },
+  "sim_to_real_config": {
+    "sim_environment": "reactor_niche_twin",
+    "real_environment": "pilot_scale_stratified_bioreactor",
+    "calibration_strategy": "iterative_bayesian_alignment",
+    "transfer_validation": "bench_then_pilot",
+    "domain_randomization": {
+      "salinity_psu": "[32, 40]",
+      "temperature_c": "[24, 34]",
+      "toxin_load": "[0.6x, 1.5x]",
+      "sensor_noise": "[low, high]"
+    }
+  },
+  "safety_envelope": {
+    "operational_design_domain": [
+      "flow_rate <= 1.3x nominal",
+      "oxygen_pulse_duty_cycle <= 0.45",
+      "biofilm_density <= 1.2x validated envelope"
+    ],
+    "control_barriers": [
+      "wall_niche_collapse",
+      "oxygen_overshoot",
+      "mutation_rate_excursion"
+    ],
+    "transaction_protocol": "two-phase commit with human approval before controller state updates",
+    "safe_states": [
+      "hold_flow",
+      "oxygen_idle",
+      "sterile_flush"
+    ]
+  },
+  "hazard_audit_profile": {
+    "scenario_focus": [
+      "wall_niche_collapse",
+      "sensor_fusion_failure",
+      "controller_override"
+    ],
+    "audit_frameworks": [
+      "LABSHIELD",
+      "LabSafetyBench",
+      "Safe-SDL"
+    ]
+  },
+  "counterfactual_questions": [
+    "What promoter rewrites increase PFAS reduction without collapsing wall niches?",
+    "What if oxygen pulses are delayed during toxin surges?",
+    "Which edits preserve community stability while improving throughput?"
+  ],
+  "pareto_objectives": [
+    "pfas_reduction",
+    "niche_stability_index",
+    "energy_efficiency",
+    "biosafety_margin"
+  ],
+  "provenance_requirements": {
+    "bundle_targets": [
+      "data",
+      "models",
+      "workflows",
+      "assays"
+    ],
+    "twin_fidelity_metrics": [
+      "niche_transition_error",
+      "transfer_gap",
+      "controller_stability_margin"
+    ],
+    "assay_lineage_required": true
+  }
+}

@@ -1,0 +1,181 @@
+{
+  "mission_id": "autonomous_lab_mars_002",
+  "name": "Autonomous Bioremediation Swarm for Martian Equator",
+  "domain": "offworld_biodesign",
+  "objective": "Establish a fully autonomous, self-repairing microbial biofilter system on the Martian surface using LLM-agent orchestrated bioreactors and high-fidelity digital twin simulations.",
+  "environment": {
+    "site_type": "martian_equator",
+    "temperature_c": -15,
+    "radiation_mSv_per_year": 200,
+    "regolith_composition": [
+      "perchlorate",
+      "iron_oxide",
+      "magnesium_sulfate"
+    ]
+  },
+  "constraints": {
+    "allowed_chassis": [
+      "Deinococcus_radiodurans",
+      "Pseudomonas_putida_extreme"
+    ],
+    "containment_level": "strict",
+    "autonomous_deployment_allowed": false
+  },
+  "control_surface": [
+    "hydration_pulse",
+    "nutrient_feed",
+    "perchlorate_quench",
+    "uv_shielding",
+    "biofilter_recirculation"
+  ],
+  "success_metrics": [
+    "purification_speed",
+    "resource_efficiency",
+    "resilience_score",
+    "recovery_after_radiation_spike"
+  ],
+  "safety_profile": {
+    "human_review_required": true,
+    "autonomous_deployment_allowed": false,
+    "notes": "Agent loops may propose control updates, but controller commit remains human-gated."
+  },
+  "ensemble_models": [
+    "evo2",
+    "generator",
+    "alphagenome"
+  ],
+  "epigenomic_targets": [
+    "DNA_repair_hotspots",
+    "perchlorate_uptake_channels"
+  ],
+  "cell_free_chassis": [],
+  "bayesian_parameters": {},
+  "sim_to_real_config": {},
+  "counterfactual_questions": [
+    "What happens if we disable the secondary repair pathway?",
+    "How does growth velocity trade off against long-term biofilm stability?"
+  ],
+  "sequence_perturbation_config": {
+    "target_sequences": [
+      "dna_repair_switch_promoters",
+      "perchlorate_uptake_channels",
+      "biofilm_maintenance_operons"
+    ],
+    "reference_cell_types": [
+      "repair_state",
+      "resource_scarcity_state"
+    ],
+    "perturbation_readouts": [
+      "repair_burst_latency",
+      "growth_arrest_probability"
+    ],
+    "design_objective": "screen rewrites that preserve autonomy without destabilizing swarm composition",
+    "zero_shot_budget": 48
+  },
+  "perturbation_benchmark_config": {
+    "reference_atlas": "autonomous_mars_perturbation_atlas",
+    "holdout_axes": [
+      "novel_repairs",
+      "rare_resource_states",
+      "cross_site_transfer"
+    ],
+    "metrics": [
+      "ood_recall",
+      "pathway_delta_rank",
+      "state_transfer_error"
+    ]
+  },
+  "single_cell_foundation_config": {},
+  "metabolic_flux_program": {},
+  "spatial_niche_program": {
+    "reference_map": "martian_equator_biofilm_atlas",
+    "assays": [
+      "spatial_transcriptomics",
+      "hyperspectral_imaging"
+    ],
+    "niche_axes": [
+      "radiation_shadowing",
+      "hydration_gradient",
+      "perchlorate_hotspots"
+    ],
+    "communication_targets": [
+      "repair_colony_recruitment",
+      "biofilter_channel_stability"
+    ]
+  },
+  "multimodal_spatial_fusion": {
+    "modalities": [
+      "hyperspectral_imaging",
+      "spatial_transcriptomics",
+      "robotic_site_imagery"
+    ],
+    "fusion_targets": [
+      "repair_hotspot_alignment",
+      "resource_shadow_mapping",
+      "uncertainty_tracking"
+    ],
+    "uncertainty_budget": "< 0.22 site-transfer fusion error"
+  },
+  "cell_imaging_program": {},
+  "biomineralization_program": {},
+  "biosensor_optimization": {},
+  "protein_evolution_program": {},
+  "containment_circuit_program": {},
+  "chronobiology_program": {},
+  "lineage_memory_program": {},
+  "safety_envelope": {
+    "operational_design_domain": [
+      "radiation_mSv_per_year <= 260",
+      "hydration_pulse_interval <= 8h",
+      "perchlorate_hotspot_intensity <= high"
+    ],
+    "control_barriers": [
+      "runaway_biofilm_growth",
+      "autonomy_policy_drift",
+      "repair_cycle_lockup"
+    ],
+    "transaction_protocol": "agent proposes, human approves, controller commits",
+    "safe_states": [
+      "local_hold",
+      "fallback_manual_schedule",
+      "sterile_flush"
+    ]
+  },
+  "hazard_audit_profile": {
+    "scenario_focus": [
+      "autonomy_drift",
+      "repair_cycle_lockup",
+      "sensor_fusion_failure"
+    ],
+    "audit_frameworks": [
+      "LABSHIELD",
+      "LabSafetyBench",
+      "Safe-SDL"
+    ]
+  },
+  "pareto_objectives": [
+    "purification_speed",
+    "resource_efficiency",
+    "resilience_score"
+  ],
+  "provenance_requirements": {
+    "bundle_targets": [
+      "models",
+      "training_data",
+      "agent_logs"
+    ],
+    "assay_lineage_required": true
+  },
+  "autonomous_co_scientist": true,
+  "synthetic_data_generation": {
+    "target_fidelity": "high",
+    "sample_count": 10000,
+    "include_edge_cases": true
+  },
+  "quantum_simulation_targets": [],
+  "edge_swarm_orchestration": false,
+  "zkp_security_level": "none",
+  "require_genetic_firewall": false,
+  "bio_computing_payload": {},
+  "spatial_simulation_resolution": "none"
+}

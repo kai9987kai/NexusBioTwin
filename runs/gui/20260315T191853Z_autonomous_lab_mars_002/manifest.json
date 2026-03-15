@@ -1,0 +1,36 @@
+{
+  "generated_at": "2026-03-15T19:18:53.642147+00:00",
+  "compiler": "nexusbiotwin 0.1.0",
+  "mission_id": "autonomous_lab_mars_002",
+  "mission_name": "Autonomous Bioremediation Swarm for Martian Equator",
+  "risk_tier": "high",
+  "summary": {
+    "total_stages": 19,
+    "review_gates": 15,
+    "active_innovations": 13,
+    "research_anchors": 27,
+    "control_surface_count": 5,
+    "success_metric_count": 4
+  },
+  "active_innovations": [
+    "multi_model_ensemble",
+    "epigenomic_landscape",
+    "counterfactual_variant_atlas",
+    "regulatory_sequence_program",
+    "perturbation_generalization_benchmark",
+    "spatial_niche_modeling",
+    "multimodal_spatial_fusion",
+    "operational_safety_envelope",
+    "labshield_hazard_audit",
+    "multiobjective_frontier",
+    "fair_provenance_bundle",
+    "autonomous_co_scientist",
+    "synthetic_twin_data"
+  ],
+  "files": [
+    "manifest.json",
+    "mission.json",
+    "plan.json",
+    "report.md"
+  ]
+}

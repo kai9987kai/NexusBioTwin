@@ -1,0 +1,657 @@
+{
+  "mission_id": "niche_reactor_001",
+  "mission_name": "Structured PFAS Reactor Niche Twin",
+  "risk_tier": "high",
+  "domain": "environmental_biodesign",
+  "objective": "Design a structured PFAS polishing consortium that preserves productive microniches, ranks promoter rewrites under perturbation, and constrains autonomous actuation to an explicit safety envelope.",
+  "active_innovations": [
+    "multi_model_ensemble",
+    "epigenomic_landscape",
+    "cell_free_prototyping",
+    "bayesian_experiment_design",
+    "sim_to_real_bridge",
+    "counterfactual_variant_atlas",
+    "regulatory_sequence_program",
+    "perturbation_generalization_benchmark",
+    "spatial_niche_modeling",
+    "multimodal_spatial_fusion",
+    "operational_safety_envelope",
+    "labshield_hazard_audit",
+    "multiobjective_frontier",
+    "fair_provenance_bundle"
+  ],
+  "stages": [
+    {
+      "name": "mission_compile",
+      "goal": "Normalize mission intent, chassis limits, and safety posture into a machine-checkable plan.",
+      "engine": "Mission compiler",
+      "outputs": [
+        "normalized mission spec",
+        "risk tier assignment",
+        "search space boundaries"
+      ],
+      "review_required": true,
+      "influences": [
+        "Habitat-Genome-Compiler",
+        "OmniForge"
+      ],
+      "research_anchors": [
+        "https://doi.org/10.48550/arXiv.2602.15061",
+        "https://doi.org/10.1038/s44185-025-00116-3"
+      ]
+    },
+    {
+      "name": "ensemble_genome_design",
+      "goal": "Use evo2, generator, alphagenome to score variants, embed genomic neighborhoods, and propose candidate regulatory programs for Pseudomonas_putida, Bacillus_subtilis, Cupriavidus_necator.",
+      "engine": "Multi-Model Ensemble Engine",
+      "outputs": [
+        "candidate edit bundles",
+        "regulatory program rankings",
+        "uncertainty notes",
+        "per-model score breakdown (Evo 2, GENERator, AlphaGenome)",
+        "calibrated ensemble rankings",
+        "inter-model disagreement flags"
+      ],
+      "review_required": true,
+      "influences": [
+        "ArcInstitute/evo2",
+        "DNA-Helix"
+      ],
+      "research_anchors": [
+        "https://www.nature.com/articles/s41586-026-10176-5",
+        "https://doi.org/10.1038/s41586-025-10014-0",
+        "https://doi.org/10.1101/2024.08.16.608288",
+        "https://arxiv.org/abs/2502.07272",
+        "https://doi.org/10.1038/s41592-025-02578-2"
+      ]
+    },
+    {
+      "name": "epigenomic_landscape",
+      "goal": "Analyze chromatin accessibility patterns and plan CRE perturbation simulations for regulatory targets: pfas_response_promoters, stress_buffer_cre, biofilm_matrix_regulators.",
+      "engine": "EpiAgent-style scATAC encoder",
+      "outputs": [
+        "cre_perturbation_matrix",
+        "chromatin_state_predictions",
+        "regulatory_circuit_map",
+        "in-silico knockout impact scores"
+      ],
+      "review_required": true,
+      "influences": [
+        "EpiAgent",
+        "LoRNASH"
+      ],
+      "research_anchors": [
+        "https://doi.org/10.1038/s41592-025-02597-z",
+        "https://doi.org/10.1101/2024.10.31.621427"
+      ]
+    },
+    {
+      "name": "regulatory_sequence_program",
+      "goal": "Model promoter and enhancer grammar for pfas_response_promoters, biofilm_gate_operators, efflux_cost_balancers across reactor_wall_niche, mid-column_niche, inlet_shock_recovery_niche to prioritize rewrites that hold niche stability during toxin surges within a zero-shot screen of 72 candidate rewrites.",
+      "engine": "GET + PARM/STRAND regulatory foundation stack",
+      "outputs": [
+        "promoter grammar scorecards",
+        "motif interaction constraints",
+        "sequence perturbation priors (promoter_activity, community_stability, metabolic_load)",
+        "cell-state-specific rewrite shortlist"
+      ],
+      "review_required": true,
+      "influences": [
+        "GET",
+        "PARM",
+        "STRAND"
+      ],
+      "research_anchors": [
+        "https://doi.org/10.1038/s41586-024-08391-z",
+        "https://doi.org/10.1038/s41586-025-10093-z",
+        "https://doi.org/10.48550/arXiv.2602.10156"
+      ]
+    },
+    {
+      "name": "perturbation_generalization_benchmark",
+      "goal": "Benchmark perturbation-response generalization against pfas_reactor_perturbation_atlas_v2 using holdout axes [unseen_toxin_surges, cross_niche_transfer, novel_growth_states] and evaluation metrics [ood_recall, delta_expression_error, ranking_stability] before trusting zero-shot rewrites.",
+      "engine": "Perturbation benchmark harness",
+      "outputs": [
+        "generalization split registry",
+        "holdout performance scorecard",
+        "OOD failure case atlas",
+        "benchmark reproducibility pack"
+      ],
+      "review_required": true,
+      "influences": [
+        "Perturbation benchmark",
+        "STRAND",
+        "Counterfactual atlas"
+      ],
+      "research_anchors": [
+        "https://doi.org/10.1038/s41592-025-02980-0",
+        "https://doi.org/10.48550/arXiv.2602.10156"
+      ]
+    },
+    {
+      "name": "counterfactual_variant_atlas",
+      "goal": "Construct a counterfactual regulatory atlas that answers mission-specific what-if edit questions: What promoter rewrites increase PFAS reduction without collapsing wall niches?; What if oxygen pulses are delayed during toxin surges?; Which edits preserve community stability while improving throughput?.",
+      "engine": "Counterfactual atlas planner",
+      "outputs": [
+        "variant impact atlas",
+        "regulatory what-if table",
+        "safe edit exclusion list",
+        "uncertainty-ranked intervention windows"
+      ],
+      "review_required": true,
+      "influences": [
+        "ArcInstitute/evo2",
+        "AlphaGenome"
+      ],
+      "research_anchors": [
+        "https://www.nature.com/articles/s41586-026-10176-5",
+        "https://doi.org/10.1038/s41586-025-10014-0",
+        "https://doi.org/10.1101/2024.08.16.608288"
+      ]
+    },
+    {
+      "name": "protein_triage",
+      "goal": "Rank translated ORFs and enzyme candidates for deeper structural follow-up.",
+      "engine": "Protein triage planner",
+      "outputs": [
+        "candidate enzymes",
+        "structure follow-up queue",
+        "interaction screening shortlist"
+      ],
+      "review_required": false,
+      "influences": [
+        "ProteinFoldingSimulation"
+      ],
+      "research_anchors": [
+        "https://doi.org/10.1038/s41586-024-07487-w",
+        "https://arxiv.org/abs/2602.04482"
+      ]
+    },
+    {
+      "name": "cell_free_prototyping",
+      "goal": "Design cell-free validation experiments using p_putida_extract, b_subtilis_extract to test candidate constructs before committing to full chassis engineering.",
+      "engine": "Cell-free experiment planner",
+      "outputs": [
+        "cfps_experiment_designs",
+        "rapid_screening_matrix",
+        "go_no_go_criteria",
+        "expected_yield_estimates"
+      ],
+      "review_required": true,
+      "influences": [
+        "Safe-SDL",
+        "AI-CFPS"
+      ],
+      "research_anchors": [
+        "https://doi.org/10.1021/acssynbio.4c00671",
+        "https://doi.org/10.1016/j.synbio.2025.01.003",
+        "https://doi.org/10.48550/arXiv.2602.15061"
+      ]
+    },
+    {
+      "name": "habitat_twin",
+      "goal": "Stress-test consortium behavior against habitat shocks and deployment conditions: salinity_spike, toxin_surge, flow_reversal, nutrient_drop.",
+      "engine": "Habitat twin planner",
+      "outputs": [
+        "shock matrix",
+        "resilience hypotheses",
+        "failure mode checklist"
+      ],
+      "review_required": false,
+      "influences": [
+        "didactic-lamp",
+        "Habitat-Genome-Compiler"
+      ],
+      "research_anchors": [
+        "https://doi.org/10.1038/s44185-025-00116-3",
+        "https://arxiv.org/abs/2511.08571"
+      ]
+    },
+    {
+      "name": "spatial_niche_modeling",
+      "goal": "Embed structured microenvironments from spatial_transcriptomics, metabolite_imaging, microelectrode_profiling against pfas_reactor_spatial_atlas_v2 to map niche transitions over oxygen_gradient, pfas_gradient, biofilm_density and coordination targets: cross-feeding_corridor_stability, shock_absorption_at_inlet.",
+      "engine": "Nicheformer spatial foundation twin",
+      "outputs": [
+        "niche embedding atlas",
+        "microenvironment transition graph",
+        "cell-cell communication risk map",
+        "spatial exclusion and enrichment zones"
+      ],
+      "review_required": true,
+      "influences": [
+        "Nicheformer",
+        "Habitat twin",
+        "FAIR digital twins"
+      ],
+      "research_anchors": [
+        "https://doi.org/10.1038/s41592-025-02814-z",
+        "https://doi.org/10.1038/s44185-025-00116-3",
+        "https://arxiv.org/abs/2511.08571"
+      ]
+    },
+    {
+      "name": "multimodal_spatial_fusion",
+      "goal": "Fuse metabolite_imaging, microelectrode_profiling, spatial_transcriptomics to support oxygen_hotspot_alignment, wall_niche_retrieval, uncertainty_tracking, while tracking an uncertainty budget of < 0.16 fusion disagreement across spatial evidence layers.",
+      "engine": "OmiCLIP + VISTA multimodal evidence fusion stack",
+      "outputs": [
+        "cross-modal alignment map",
+        "spatial signal confidence surface",
+        "morphology-expression retrieval board",
+        "fusion uncertainty heatmap"
+      ],
+      "review_required": true,
+      "influences": [
+        "OmiCLIP",
+        "VISTA",
+        "Nicheformer"
+      ],
+      "research_anchors": [
+        "https://doi.org/10.1038/s41592-025-02707-1",
+        "https://doi.org/10.1038/s42003-025-09479-6",
+        "https://doi.org/10.1038/s41592-025-02814-z"
+      ]
+    },
+    {
+      "name": "multiobjective_frontier",
+      "goal": "Compute a Pareto frontier across mission tradeoffs to avoid collapsing the search into a single score. Frontier objectives: pfas_reduction, niche_stability_index, energy_efficiency, biosafety_margin.",
+      "engine": "Pareto frontier planner",
+      "outputs": [
+        "pareto frontier candidates",
+        "tradeoff matrix",
+        "dominated candidate rejects",
+        "budget-aware follow-up recommendations"
+      ],
+      "review_required": true,
+      "influences": [
+        "Bayesian-Optimization",
+        "Habitat twin",
+        "Consortium control"
+      ],
+      "research_anchors": [
+        "https://doi.org/10.1002/bit.28929",
+        "https://doi.org/10.1016/j.bej.2025.109618",
+        "https://arxiv.org/abs/2511.08571"
+      ]
+    },
+    {
+      "name": "bayesian_experiment_design",
+      "goal": "Plan adaptive Bayesian optimization loops to maximize maximize_pfas_reduction_under_niche_stability_constraints over search dimensions [flow_rate, oxygen_pulse, nutrient_feed, temperature] using expected_hypervolume_improvement acquisition with batch size 3 for up to 20 iterations.",
+      "engine": "BO acquisition planner with cognitive digital twin",
+      "outputs": [
+        "experiment_arms",
+        "acquisition_function_policy",
+        "stopping_criteria",
+        "expected_improvement_surface",
+        "surrogate_model_spec"
+      ],
+      "review_required": true,
+      "influences": [
+        "Bayesian-Optimization",
+        "Cognitive-Digital-Twin"
+      ],
+      "research_anchors": [
+        "https://doi.org/10.1002/bit.28929",
+        "https://doi.org/10.1016/j.bej.2025.109618",
+        "https://doi.org/10.1016/j.bej.2024.109547"
+      ]
+    },
+    {
+      "name": "operational_safety_envelope",
+      "goal": "Compile a Safe-SDL execution envelope with an explicit operational design domain [flow_rate <= 1.3x nominal; oxygen_pulse_duty_cycle <= 0.45; biofilm_density <= 1.2x validated envelope], barrier monitors for wall_niche_collapse, oxygen_overshoot, mutation_rate_excursion, and transactional control under two-phase commit with human approval before controller state updates.",
+      "engine": "Safe-SDL envelope compiler",
+      "outputs": [
+        "operational design domain specification",
+        "control barrier monitors",
+        "transaction-safe execution contract (two-phase commit with human approval before controller state updates)",
+        "fallback safe-state ladder (hold_flow, oxygen_idle, sterile_flush)"
+      ],
+      "review_required": true,
+      "influences": [
+        "Safe-SDL",
+        "BioControl DSL",
+        "Human review queue"
+      ],
+      "research_anchors": [
+        "https://doi.org/10.48550/arXiv.2602.15061",
+        "https://doi.org/10.1038/s44185-025-00116-3"
+      ]
+    },
+    {
+      "name": "controller_design",
+      "goal": "Compile a BioControl DSL policy over the control surface: flow_rate, oxygen_pulse, nutrient_feed, temperature, toxin_quench. Include sim-to-real transfer bridge from reactor_niche_twin to pilot_scale_stratified_bioreactor. Constrain the policy to the declared operational safety envelope.",
+      "engine": "BioControl DSL planner + Sim-to-Real Transfer Bridge + Safe-SDL Envelope",
+      "outputs": [
+        "controller templates",
+        "closed-loop observability plan",
+        "intervention escalation rules",
+        "domain_randomization_spec (reactor_niche_twin -> pilot_scale_stratified_bioreactor)",
+        "transfer_gap_estimate",
+        "calibration_protocol (iterative_bayesian_alignment)",
+        "reality_gap_test_matrix",
+        "barrier-aware controller policy",
+        "safe-state transition hooks"
+      ],
+      "review_required": true,
+      "influences": [
+        "NeuroPulse-CableLab",
+        "NeuroFusion-Reactor",
+        "Dual-DT-RL",
+        "Safe-SDL"
+      ],
+      "research_anchors": [
+        "https://doi.org/10.1038/s41586-025-08829-y",
+        "https://doi.org/10.1088/1741-4326/ae34c6",
+        "https://arxiv.org/abs/2511.08571",
+        "https://doi.org/10.3390/s25030601",
+        "https://doi.org/10.48550/arXiv.2502.14371",
+        "https://doi.org/10.48550/arXiv.2602.15061"
+      ]
+    },
+    {
+      "name": "labshield_hazard_audit",
+      "goal": "Audit the mission against LABSHIELD, LabSafetyBench, Safe-SDL with emphasis on wall_niche_collapse, sensor_fusion_failure, controller_override, surfacing hazard blind spots and refusal-trigger scenarios before escalation.",
+      "engine": "LABSHIELD hazard audit board",
+      "outputs": [
+        "hazard reasoning scorecard",
+        "refusal-trigger checklist",
+        "blind-spot taxonomy",
+        "safety review handoff pack"
+      ],
+      "review_required": true,
+      "influences": [
+        "LABSHIELD",
+        "LabSafetyBench",
+        "Safe-SDL"
+      ],
+      "research_anchors": [
+        "https://arxiv.org/abs/2603.11987",
+        "https://www.nature.com/articles/s42256-025-01152-1",
+        "https://doi.org/10.48550/arXiv.2602.15061"
+      ]
+    },
+    {
+      "name": "safety_red_team",
+      "goal": "Stress-test the proposed plan against misuse, blocked traits, autonomy creep, and hidden safety regressions. Disallowed traits: antibiotic_selection_marker, mammalian_pathogenicity_signal, unbounded_horizontal_transfer.",
+      "engine": "Policy and refusal planner",
+      "outputs": [
+        "red-team scenarios",
+        "blocked action list",
+        "review escalation triggers",
+        "deployment refusal conditions"
+      ],
+      "review_required": true,
+      "influences": [
+        "Safe-SDL",
+        "Habitat-Genome-Compiler"
+      ],
+      "research_anchors": [
+        "https://doi.org/10.48550/arXiv.2602.15061",
+        "https://doi.org/10.1101/2024.08.16.608288"
+      ]
+    },
+    {
+      "name": "fair_provenance_bundle",
+      "goal": "Package the twin as a FAIR artifact bundle with explicit provenance, model lineage, and assay traceability targets for data, models, workflows, assays.",
+      "engine": "FAIR twin bundle planner",
+      "outputs": [
+        "artifact lineage graph",
+        "model and assay provenance bundle",
+        "twin fidelity checklist",
+        "reproducibility handoff pack"
+      ],
+      "review_required": false,
+      "influences": [
+        "FAIR digital twins",
+        "OmniForge",
+        "nexusflow"
+      ],
+      "research_anchors": [
+        "https://doi.org/10.1038/s44185-025-00116-3",
+        "https://doi.org/10.48550/arXiv.2602.15061"
+      ]
+    },
+    {
+      "name": "orchestration_and_review",
+      "goal": "Assemble the pipeline into an auditable run with artifacts, retries, and human review.",
+      "engine": "NexusFlow and OmniForge orchestration",
+      "outputs": [
+        "run manifest",
+        "review queue",
+        "artifact index"
+      ],
+      "review_required": true,
+      "influences": [
+        "nexusflow",
+        "OmniForge",
+        "Supermix_29"
+      ],
+      "research_anchors": [
+        "https://doi.org/10.48550/arXiv.2602.15061",
+        "https://doi.org/10.1038/s44185-025-00116-3"
+      ]
+    }
+  ],
+  "review_policy": {
+    "human_review_required": true,
+    "autonomous_deployment_allowed": false
+  },
+  "warnings": [],
+  "recommended_next_steps": [
+    "Review promoter rewrites against reporter or MPRA-style assays before escalating to chassis work.",
+    "Inspect unseen-perturbation and unseen-cell-state holdout failures before trusting zero-shot response predictions.",
+    "Run the declared cell-free validation matrix before organism-level engineering.",
+    "Validate niche exclusion zones and communication corridors in a structured analog assay.",
+    "Review multimodal fusion uncertainty maps before using imputed spatial signals in decisions."
+  ],
+  "validation_ladder": [
+    {
+      "name": "in_silico_ranking",
+      "status": "ready",
+      "detail": "Foundation-model ranking and safety triage can proceed locally."
+    },
+    {
+      "name": "cell_free_validation",
+      "status": "required",
+      "detail": "Cell-free extracts are configured for fast validation."
+    },
+    {
+      "name": "analog_environment",
+      "status": "required",
+      "detail": "Analog chamber or structured habitat validation is needed before transfer."
+    },
+    {
+      "name": "controller_commit",
+      "status": "gated",
+      "detail": "Controller updates are gated by the operational safety envelope."
+    },
+    {
+      "name": "pilot_deployment",
+      "status": "blocked",
+      "detail": "Deployment remains blocked by policy unless human review clears a staged pilot."
+    }
+  ],
+  "summary": {
+    "total_stages": 19,
+    "review_gates": 16,
+    "active_innovations": 14,
+    "research_anchors": 30,
+    "control_surface_count": 5,
+    "success_metric_count": 5
+  },
+  "preview_data": {
+    "pareto_frontier": [
+      {
+        "label": "Pfas reduction",
+        "x": 63,
+        "y": 70,
+        "r": 8
+      },
+      {
+        "label": "Niche stability index",
+        "x": 69,
+        "y": 81,
+        "r": 14
+      },
+      {
+        "label": "Energy efficiency",
+        "x": 86,
+        "y": 80,
+        "r": 14
+      },
+      {
+        "label": "Biosafety margin",
+        "x": 82,
+        "y": 64,
+        "r": 11
+      }
+    ],
+    "counterfactual_map": [
+      {
+        "id": "CF-01",
+        "type": "Upregulate",
+        "target": "What promoter rewrites increase PFAS reduction without collapsing wall niches",
+        "impact": "+22%",
+        "note": "Planner preview only. Use this as a review prompt, not empirical evidence."
+      },
+      {
+        "id": "CF-02",
+        "type": "Timing Shift",
+        "target": "What if oxygen pulses are delayed during toxin surges",
+        "impact": "+22%",
+        "note": "Planner preview only. Use this as a review prompt, not empirical evidence."
+      },
+      {
+        "id": "CF-03",
+        "type": "What-If Edit",
+        "target": "Which edits preserve community stability while improving throughput",
+        "impact": "+17%",
+        "note": "Planner preview only. Use this as a review prompt, not empirical evidence."
+      }
+    ],
+    "regulatory_grammar": [
+      {
+        "name": "Pfas response promoters",
+        "gain": 61,
+        "note": "Best transfer in reactor wall niche. Planning proxy derived from mission structure."
+      },
+      {
+        "name": "Biofilm gate operators",
+        "gain": 91,
+        "note": "Best transfer in mid-column niche. Planning proxy derived from mission structure."
+      },
+      {
+        "name": "Efflux cost balancers",
+        "gain": 68,
+        "note": "Best transfer in inlet shock recovery niche. Planning proxy derived from mission structure."
+      }
+    ],
+    "perturbation_benchmark": [
+      {
+        "name": "Unseen toxin surges",
+        "score": 73,
+        "baseline": 63
+      },
+      {
+        "name": "Cross niche transfer",
+        "score": 65,
+        "baseline": 44
+      },
+      {
+        "name": "Novel growth states",
+        "score": 80,
+        "baseline": 73
+      }
+    ],
+    "spatial_niche": [
+      {
+        "name": "Oxygen gradient",
+        "state": "Stable",
+        "score": "0.95",
+        "cls": "stable"
+      },
+      {
+        "name": "Pfas gradient",
+        "state": "Stable",
+        "score": "0.90",
+        "cls": "stable"
+      },
+      {
+        "name": "Biofilm density",
+        "state": "Vulnerable",
+        "score": "0.69",
+        "cls": "hot"
+      },
+      {
+        "name": "Cross-feeding corridor stability",
+        "state": "Stable",
+        "score": "0.96",
+        "cls": "stable"
+      },
+      {
+        "name": "Shock absorption at inlet",
+        "state": "Stable",
+        "score": "0.89",
+        "cls": "stable"
+      }
+    ],
+    "multimodal_fusion": [
+      {
+        "name": "Metabolite imaging",
+        "target": "Oxygen hotspot alignment",
+        "alignment": 90,
+        "uncertainty": 26
+      },
+      {
+        "name": "Microelectrode profiling",
+        "target": "Wall niche retrieval",
+        "alignment": 87,
+        "uncertainty": 10
+      },
+      {
+        "name": "Spatial transcriptomics",
+        "target": "Uncertainty tracking",
+        "alignment": 65,
+        "uncertainty": 9
+      }
+    ],
+    "safety_envelope": [
+      {
+        "name": "ODD Bounds",
+        "detail": "3 active operating limits declared.",
+        "level": "89%"
+      },
+      {
+        "name": "Barrier Monitors",
+        "detail": "wall_niche_collapse, oxygen_overshoot, mutation_rate_excursion",
+        "level": "82%"
+      },
+      {
+        "name": "Transaction Guard",
+        "detail": "two-phase commit with human approval before controller state updates",
+        "level": "97%"
+      },
+      {
+        "name": "Fallback States",
+        "detail": "hold_flow, oxygen_idle, sterile_flush",
+        "level": "87%"
+      }
+    ],
+    "hazard_audit": [
+      {
+        "name": "Wall niche collapse",
+        "severity": 2,
+        "coverage": 66
+      },
+      {
+        "name": "Sensor fusion failure",
+        "severity": 3,
+        "coverage": 85
+      },
+      {
+        "name": "Controller override",
+        "severity": 2,
+        "coverage": 80
+      }
+    ]
+  }
+}

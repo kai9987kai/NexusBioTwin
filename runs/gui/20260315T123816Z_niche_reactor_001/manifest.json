@@ -1,0 +1,23 @@
+{
+  "generated_at": "2026-03-15T12:38:16.048898+00:00",
+  "compiler": "nexusbiotwin 0.1.0",
+  "mission_id": "niche_reactor_001",
+  "active_innovations": [
+    "multi_model_ensemble",
+    "epigenomic_landscape",
+    "cell_free_prototyping",
+    "bayesian_experiment_design",
+    "sim_to_real_bridge",
+    "counterfactual_variant_atlas",
+    "regulatory_sequence_program",
+    "spatial_niche_modeling",
+    "operational_safety_envelope",
+    "multiobjective_frontier",
+    "fair_provenance_bundle"
+  ],
+  "files": [
+    "manifest.json",
+    "plan.json",
+    "report.md"
+  ]
+}

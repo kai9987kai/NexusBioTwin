@@ -1,0 +1,17 @@
+{
+  "generated_at": "2026-03-14T20:51:42.542435+00:00",
+  "compiler": "nexusbiotwin 0.2.0",
+  "mission_id": "mars_regolith_001",
+  "active_innovations": [
+    "multi_model_ensemble",
+    "epigenomic_landscape",
+    "cell_free_prototyping",
+    "bayesian_experiment_design",
+    "sim_to_real_bridge"
+  ],
+  "files": [
+    "manifest.json",
+    "plan.json",
+    "report.md"
+  ]
+}

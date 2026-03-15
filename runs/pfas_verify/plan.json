@@ -1,0 +1,130 @@
+{
+  "mission_id": "pfas_brine_001",
+  "mission_name": "PFAS Brine Adaptive Bioremediation",
+  "risk_tier": "high",
+  "domain": "environmental_biodesign",
+  "objective": "Rank safe genome programs, enzyme targets, and controller strategies for PFAS brine polishing under fluctuating salinity and toxin load.",
+  "active_innovations": [],
+  "stages": [
+    {
+      "name": "mission_compile",
+      "goal": "Normalize mission intent, chassis limits, and safety posture into a machine-checkable plan.",
+      "engine": "Mission compiler",
+      "outputs": [
+        "normalized mission spec",
+        "risk tier assignment",
+        "search space boundaries"
+      ],
+      "review_required": true,
+      "influences": [
+        "Habitat-Genome-Compiler",
+        "OmniForge"
+      ],
+      "research_anchors": [
+        "https://arxiv.org/abs/2602.09466",
+        "https://doi.org/10.1038/s44185-025-00116-3"
+      ]
+    },
+    {
+      "name": "genome_design",
+      "goal": "Use Evo 2 to score variants, embed genomic neighborhoods, and propose candidate regulatory programs for Pseudomonas_putida, Bacillus_subtilis.",
+      "engine": "Evo 2 adapter",
+      "outputs": [
+        "candidate edit bundles",
+        "regulatory program rankings",
+        "uncertainty notes"
+      ],
+      "review_required": true,
+      "influences": [
+        "ArcInstitute/evo2",
+        "DNA-Helix"
+      ],
+      "research_anchors": [
+        "https://www.nature.com/articles/s41586-026-10176-5",
+        "https://doi.org/10.1038/s41586-025-10014-0",
+        "https://doi.org/10.1101/2024.08.16.608288"
+      ]
+    },
+    {
+      "name": "protein_triage",
+      "goal": "Rank translated ORFs and enzyme candidates for deeper structural follow-up.",
+      "engine": "Protein triage planner",
+      "outputs": [
+        "candidate enzymes",
+        "structure follow-up queue",
+        "interaction screening shortlist"
+      ],
+      "review_required": false,
+      "influences": [
+        "ProteinFoldingSimulation"
+      ],
+      "research_anchors": [
+        "https://doi.org/10.1038/s41586-024-07487-w",
+        "https://arxiv.org/abs/2602.04482"
+      ]
+    },
+    {
+      "name": "habitat_twin",
+      "goal": "Stress-test consortium behavior against habitat shocks and deployment conditions: salinity_spike, toxin_surge, nutrient_drop.",
+      "engine": "Habitat twin planner",
+      "outputs": [
+        "shock matrix",
+        "resilience hypotheses",
+        "failure mode checklist"
+      ],
+      "review_required": false,
+      "influences": [
+        "didactic-lamp",
+        "Habitat-Genome-Compiler"
+      ],
+      "research_anchors": [
+        "https://doi.org/10.1038/s44185-025-00116-3",
+        "https://arxiv.org/abs/2511.08571"
+      ]
+    },
+    {
+      "name": "controller_design",
+      "goal": "Compile a BioControl DSL policy over the control surface: pH, nutrient_feed, temperature, light_cycle, flow_rate, toxin_quench.",
+      "engine": "BioControl DSL planner",
+      "outputs": [
+        "controller templates",
+        "closed-loop observability plan",
+        "intervention escalation rules"
+      ],
+      "review_required": true,
+      "influences": [
+        "NeuroPulse-CableLab",
+        "NeuroFusion-Reactor"
+      ],
+      "research_anchors": [
+        "https://doi.org/10.1038/s41586-025-08829-y",
+        "https://doi.org/10.1088/1741-4326/ae34c6",
+        "https://arxiv.org/abs/2511.08571"
+      ]
+    },
+    {
+      "name": "orchestration_and_review",
+      "goal": "Assemble the pipeline into an auditable run with artifacts, retries, and human review.",
+      "engine": "NexusFlow and OmniForge orchestration",
+      "outputs": [
+        "run manifest",
+        "review queue",
+        "artifact index"
+      ],
+      "review_required": true,
+      "influences": [
+        "nexusflow",
+        "OmniForge",
+        "Supermix_29"
+      ],
+      "research_anchors": [
+        "https://arxiv.org/abs/2602.09466",
+        "https://doi.org/10.1038/s44185-025-00116-3"
+      ]
+    }
+  ],
+  "review_policy": {
+    "human_review_required": true,
+    "autonomous_deployment_allowed": false
+  }
+}

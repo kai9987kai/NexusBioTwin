@@ -1,0 +1,327 @@
+{
+  "mission_id": "mars_regolith_001",
+  "name": "Mars Regolith Bioremediation and Soil Conditioning",
+  "domain": "offworld_biodesign",
+  "objective": "Design radiation-hardened microbial consortia to convert Martian regolith perchlorates into bioavailable nutrients, enabling closed-loop soil conditioning for future ISRU greenhouses.",
+  "environment": {
+    "site_type": "martian_regolith",
+    "temperature_c": -20,
+    "salinity_psu": 0,
+    "oxygenation": "anoxic",
+    "radiation_mSv_per_year": 250,
+    "pressure_kPa": 0.636,
+    "regolith_composition": [
+      "iron_oxide",
+      "perchlorate",
+      "sulfate",
+      "silicate"
+    ],
+    "shock_profile": [
+      "radiation_burst",
+      "temperature_swing",
+      "dust_storm_occlusion",
+      "perchlorate_spike"
+    ]
+  },
+  "constraints": {
+    "allowed_chassis": [
+      "Deinococcus_radiodurans",
+      "Chroococcidiopsis_thermalis",
+      "Bacillus_subtilis"
+    ],
+    "disallowed_traits": [
+      "antibiotic_selection_marker",
+      "mammalian_pathogenicity_signal",
+      "uncontained_horizontal_gene_transfer"
+    ],
+    "containment_level": "strict",
+    "max_candidate_programs": 12
+  },
+  "control_surface": [
+    "temperature",
+    "UV_shielding",
+    "nutrient_feed",
+    "water_recycling",
+    "atmospheric_mix",
+    "perchlorate_quench"
+  ],
+  "success_metrics": [
+    "perchlorate_reduction_rate",
+    "nutrient_bioavailability_index",
+    "consortium_radiation_survival",
+    "soil_organic_carbon_increase",
+    "controller_resilience_under_dust_storm"
+  ],
+  "safety_profile": {
+    "human_review_required": true,
+    "autonomous_deployment_allowed": false,
+    "notes": "All genome proposals must be validated in Earth-analog bioreactors before any Mars deployment planning. Cell-free prototyping mandatory."
+  },
+  "ensemble_models": [
+    "evo2",
+    "generator",
+    "alphagenome"
+  ],
+  "epigenomic_targets": [
+    "radiation_response_CREs",
+    "perchlorate_reductase_promoters",
+    "desiccation_tolerance_enhancers"
+  ],
+  "single_cell_foundation_config": {
+    "reference_atlas": "mars_regolith_cell_state_bank_v1",
+    "target_cell_states": [
+      "perchlorate_active",
+      "radiation_survivor",
+      "desiccation_reserve"
+    ],
+    "tasks": [
+      "cell_state_projection",
+      "cross_atlas_retrieval",
+      "zero_shot_annotation"
+    ],
+    "adapter_strategy": "zero_shot_then_low_rank_adapter"
+  },
+  "metabolic_flux_program": {
+    "substrates": [
+      "perchlorate",
+      "trace_CO2",
+      "regolith_bound_sulfur"
+    ],
+    "target_products": [
+      "bioavailable_nitrogen",
+      "reduced_chlorine_waste",
+      "soil_conditioning_exopolymers"
+    ],
+    "stress_couplings": [
+      "radiation_damage_repair_cost",
+      "desiccation_recovery_ATP_load",
+      "perchlorate_detox_redox_drain"
+    ],
+    "optimization_goal": "maximize perchlorate detox throughput while preserving redox headroom"
+  },
+  "cell_free_chassis": [
+    "Deinococcus_radiodurans_extract",
+    "Bacillus_subtilis_extract"
+  ],
+  "biosensor_optimization": {
+    "sensor_family": "cell_free_perchlorate_reporter",
+    "target_analytes": [
+      "perchlorate",
+      "chlorate"
+    ],
+    "counter_selectants": [
+      "sulfate",
+      "nitrate"
+    ],
+    "screen_format": "freeze_dried_cell_free",
+    "optimization_objectives": [
+      "sensitivity_at_action_limit",
+      "specificity_vs_nitrate",
+      "response_time"
+    ],
+    "screening_budget_variants": 96
+  },
+  "protein_evolution_program": {
+    "seed_proteins": [
+      "perchlorate_reductase",
+      "radiation_repair_factor"
+    ],
+    "fitness_objective": "activity_retention_under_radiation_and_desiccation",
+    "rounds": 4,
+    "variants_per_round": 96,
+    "biofoundry_mode": "self_driving"
+  },
+  "bayesian_parameters": {
+    "objective_function": "perchlorate_reduction_rate",
+    "search_dimensions": [
+      "temperature",
+      "UV_shielding",
+      "nutrient_concentration",
+      "water_activity"
+    ],
+    "max_iterations": 50,
+    "acquisition_function": "expected_improvement",
+    "initial_design": "latin_hypercube",
+    "batch_size": 4
+  },
+  "sim_to_real_config": {
+    "sim_environment": "mars_analog_bioreactor",
+    "real_environment": "martian_regolith_in_situ",
+    "domain_randomization": {
+      "temperature_range": [-40, 5],
+      "radiation_range": [100, 500],
+      "perchlorate_range": [0.1, 2.0]
+    },
+    "calibration_strategy": "iterative_bayesian_alignment",
+    "transfer_validation": "earth_analog_chamber"
+  },
+  "sequence_perturbation_config": {
+    "target_sequences": [
+      "radiation_response_promoters",
+      "perchlorate_importer_5utr",
+      "desiccation_switch_terminators"
+    ],
+    "reference_cell_types": [
+      "biofilm_edge",
+      "perchlorate_active",
+      "desiccation_survivor"
+    ],
+    "perturbation_readouts": [
+      "promoter_activity",
+      "repair_latency",
+      "metabolic_load"
+    ],
+    "design_objective": "rank cell-state-specific promoter rewrites that maintain repair resilience",
+    "zero_shot_budget": 64
+  },
+  "perturbation_benchmark_config": {
+    "reference_atlas": "mars_regolith_perturbation_atlas",
+    "holdout_axes": [
+      "unseen_perturbations",
+      "unseen_cell_states",
+      "stress_regime_transfer"
+    ],
+    "metrics": [
+      "ood_recall",
+      "rank_correlation",
+      "delta_expression_error"
+    ]
+  },
+  "spatial_niche_program": {
+    "reference_map": "regolith_microcolony_gradient_atlas",
+    "assays": [
+      "spatial_transcriptomics",
+      "metabolite_imaging"
+    ],
+    "niche_axes": [
+      "perchlorate_gradient",
+      "uv_exposure",
+      "water_activity"
+    ],
+    "communication_targets": [
+      "cross-feeding_corridor_stability",
+      "biofilm_edge_repair"
+    ]
+  },
+  "multimodal_spatial_fusion": {
+    "modalities": [
+      "hyperspectral_imaging",
+      "spatial_transcriptomics",
+      "metabolite_imaging"
+    ],
+    "fusion_targets": [
+      "damage_hotspot_alignment",
+      "biofilm_morphology_retrieval",
+      "uncertainty_tracking"
+    ],
+    "uncertainty_budget": "< 0.18 mean fusion error"
+  },
+  "cell_imaging_program": {
+    "modalities": [
+      "live_cell_imaging",
+      "hyperspectral_imaging",
+      "MERFISH_proxy_frames"
+    ],
+    "segmentation_targets": [
+      "biofilm_edge",
+      "repair_microcolony",
+      "perchlorate_hotspot"
+    ],
+    "prompt_strategy": "box_prompt_then_few_shot_refine",
+    "downstream_workflows": [
+      "spatial_qc",
+      "morphology_retrieval",
+      "niche_boundary_tracking"
+    ]
+  },
+  "biomineralization_program": {
+    "target_minerals": [
+      "iron_oxide",
+      "silicate_binder",
+      "perchlorate_capture_matrix"
+    ],
+    "material_functions": [
+      "dust_shielding",
+      "wall_adhesion",
+      "toxin_filtration"
+    ],
+    "interface_assays": [
+      "coupon_adhesion_test",
+      "radiation_scatter_proxy",
+      "delamination_cycle"
+    ],
+    "deployment_surface": "regolith_bioreactor_liner"
+  },
+  "chronobiology_program": {
+    "cycle_length_hours": 24.6,
+    "zeitgebers": [
+      "thermal_dawn_pulse",
+      "LED_blue_shift",
+      "nutrient_morning_spike"
+    ],
+    "scheduled_controls": [
+      "UV_shielding",
+      "nutrient_feed",
+      "water_recycling"
+    ],
+    "night_safe_states": [
+      "low_metabolic_hold",
+      "repair_biased_recirculation"
+    ]
+  },
+  "containment_circuit_program": {
+    "layers": [
+      "perchlorate_dependency_auxotrophy",
+      "temperature_escape_kill_switch",
+      "quorum_tripwire_lock"
+    ],
+    "tripwire_triggers": [
+      "off_nominal_growth_signature",
+      "unapproved_temperature_band",
+      "containment_sensor_drop"
+    ],
+    "reversion_mode": "sterile_fail_closed_flush"
+  },
+  "lineage_memory_program": {
+    "events_to_record": [
+      "radiation_burst_recovery",
+      "perchlorate_detox_commit",
+      "dust_storm_safe_mode_entry"
+    ],
+    "recording_mechanism": "DNA_state_logger",
+    "export_cadence": "every_24h_operator_review"
+  },
+  "safety_envelope": {
+    "operational_design_domain": [
+      "radiation_mSv_per_year <= 350",
+      "temperature_c between -40 and 5",
+      "perchlorate_load <= 2.0x nominal"
+    ],
+    "control_barriers": [
+      "oxygen_overshoot",
+      "biofilm_overgrowth",
+      "mutation_rate_excursion"
+    ],
+    "transaction_protocol": "two-phase human review before stateful actuation updates",
+    "safe_states": [
+      "standby_recirculation",
+      "nutrient_hold",
+      "thermal_safe_mode"
+    ]
+  },
+  "hazard_audit_profile": {
+    "scenario_focus": [
+      "containment_breach",
+      "autonomy_drift",
+      "evidence_misalignment"
+    ],
+    "audit_frameworks": [
+      "LABSHIELD",
+      "Safe-SDL"
+    ],
+    "required_refusals": [
+      "uncontained_deployment",
+      "policy_override"
+    ]
+  }
+}

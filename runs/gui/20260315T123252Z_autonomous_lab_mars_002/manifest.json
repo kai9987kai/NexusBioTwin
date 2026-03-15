@@ -1,0 +1,22 @@
+{
+  "generated_at": "2026-03-15T12:32:52.286627+00:00",
+  "compiler": "nexusbiotwin 0.1.0",
+  "mission_id": "autonomous_lab_mars_002",
+  "active_innovations": [
+    "multi_model_ensemble",
+    "epigenomic_landscape",
+    "counterfactual_variant_atlas",
+    "regulatory_sequence_program",
+    "spatial_niche_modeling",
+    "operational_safety_envelope",
+    "multiobjective_frontier",
+    "fair_provenance_bundle",
+    "autonomous_co_scientist",
+    "synthetic_twin_data"
+  ],
+  "files": [
+    "manifest.json",
+    "plan.json",
+    "report.md"
+  ]
+}

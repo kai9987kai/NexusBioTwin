@@ -1,0 +1,925 @@
+- generic [ref=e5]:
+  - banner [ref=e6]:
+    - heading "NexusBioTwin Mission Studio" [level=1] [ref=e9]
+    - generic [ref=e10]:
+      - button "Load Mars Example" [ref=e11] [cursor=pointer]
+      - button "Load Autonomous Lab" [ref=e12] [cursor=pointer]
+      - button "Load Quantum Swarm" [ref=e13] [cursor=pointer]
+      - button "Load Orthogonal Bio-Computer" [ref=e14] [cursor=pointer]
+      - button "Load Niche Reactor" [ref=e15] [cursor=pointer]
+  - main [ref=e16]:
+    - generic [ref=e17]:
+      - generic [ref=e18]:
+        - heading "Mission Specification JSON" [level=2] [ref=e19]:
+          - text: Mission Specification
+          - generic [ref=e20]: JSON
+        - button "Compile Mission" [ref=e21] [cursor=pointer]:
+          - generic [ref=e22]: Compile Mission
+      - textbox "Enter mission JSON here..." [ref=e24]: "{ \"message\": \"Paste mission JSON here\" }"
+    - generic [ref=e25]:
+      - generic [ref=e26]:
+        - generic [ref=e27]:
+          - heading "Dossier high Risk" [level=2] [ref=e160]:
+            - text: Dossier
+            - generic [ref=e161]: high Risk
+          - generic [ref=e29]: Archive · 15 Mar 2026, 18:26
+        - generic [ref=e30]:
+          - button "Report" [ref=e31] [cursor=pointer]
+          - button "Raw Plan" [ref=e32] [cursor=pointer]
+          - button "Manifest" [ref=e33] [cursor=pointer]
+      - generic [ref=e34]:
+        - generic [ref=e162]:
+          - generic [ref=e163]:
+            - generic [ref=e164]:
+              - generic [ref=e165]: Stages
+              - strong [ref=e166]: "16"
+            - generic [ref=e167]:
+              - generic [ref=e168]: Review Gates
+              - strong [ref=e169]: "14"
+            - generic [ref=e170]:
+              - generic [ref=e171]: Innovations
+              - strong [ref=e172]: "11"
+            - generic [ref=e173]:
+              - generic [ref=e174]: Research Anchors
+              - strong [ref=e175]: "30"
+          - generic [ref=e176]:
+            - heading "Validation Warnings" [level=3] [ref=e177]
+            - generic [ref=e179]: High-risk mission does not declare FAIR provenance requirements.
+          - generic [ref=e180]:
+            - generic [ref=e181]:
+              - heading "Validation Ladder" [level=3] [ref=e182]
+              - generic [ref=e183]:
+                - generic [ref=e184]:
+                  - generic [ref=e185]:
+                    - strong [ref=e186]: in silico ranking
+                    - generic [ref=e187]: ready
+                  - paragraph [ref=e188]: Foundation-model ranking and safety triage can proceed locally.
+                - generic [ref=e189]:
+                  - generic [ref=e190]:
+                    - strong [ref=e191]: cell free validation
+                    - generic [ref=e192]: required
+                  - paragraph [ref=e193]: Cell-free extracts are configured for fast validation.
+                - generic [ref=e194]:
+                  - generic [ref=e195]:
+                    - strong [ref=e196]: analog environment
+                    - generic [ref=e197]: required
+                  - paragraph [ref=e198]: Analog chamber or structured habitat validation is needed before transfer.
+                - generic [ref=e199]:
+                  - generic [ref=e200]:
+                    - strong [ref=e201]: controller commit
+                    - generic [ref=e202]: gated
+                  - paragraph [ref=e203]: Controller updates are gated by the operational safety envelope.
+                - generic [ref=e204]:
+                  - generic [ref=e205]:
+                    - strong [ref=e206]: pilot deployment
+                    - generic [ref=e207]: blocked
+                  - paragraph [ref=e208]: Deployment remains blocked by policy unless human review clears a staged pilot.
+            - generic [ref=e209]:
+              - heading "Next Steps" [level=3] [ref=e210]
+              - generic [ref=e211]:
+                - generic [ref=e212]: Resolve the validation warnings before promoting any controller or genome proposal.
+                - generic [ref=e213]: Review promoter rewrites against reporter or MPRA-style assays before escalating to chassis work.
+                - generic [ref=e214]: Inspect unseen-perturbation and unseen-cell-state holdout failures before trusting zero-shot response predictions.
+                - generic [ref=e215]: Run the declared cell-free validation matrix before organism-level engineering.
+                - generic [ref=e216]: Validate niche exclusion zones and communication corridors in a structured analog assay.
+          - generic [ref=e217]: Archived to C:\Users\kai99\Desktop\New folder (10)\NexusBioTwin\runs\gui\20260315T182659Z_mars_regolith_001
+        - generic [ref=e218]:
+          - heading "Mars Regolith Bioremediation and Soil Conditioning" [level=1] [ref=e219]
+          - list [ref=e220]:
+            - listitem [ref=e221]:
+              - text: "Mission ID:"
+              - code [ref=e222]: mars_regolith_001
+            - listitem [ref=e223]:
+              - text: "Domain:"
+              - code [ref=e224]: offworld_biodesign
+            - listitem [ref=e225]:
+              - text: "Risk tier:"
+              - code [ref=e226]: high
+          - heading "Active Innovation Modules" [level=2] [ref=e227]
+          - list [ref=e228]:
+            - listitem [ref=e229]:
+              - strong [ref=e230]: Multi-Model Ensemble Genomic Engine (Evo 2 + GENERator + AlphaGenome)
+            - listitem [ref=e231]:
+              - strong [ref=e232]: Epigenomic Landscape Analyzer (EpiAgent-style CRE perturbation)
+            - listitem [ref=e233]:
+              - strong [ref=e234]: Cell-Free Rapid Prototyping Planner
+            - listitem [ref=e235]:
+              - strong [ref=e236]: Bayesian Optimization Closed-Loop Experiment Design
+            - listitem [ref=e237]:
+              - strong [ref=e238]: Sim-to-Real Transfer Bridge for BioControl
+            - listitem [ref=e239]:
+              - strong [ref=e240]: Regulatory Grammar and Sequence Perturbation Planner (GET + PARM/STRAND)
+            - listitem [ref=e241]:
+              - strong [ref=e242]: Perturbation Generalization Benchmark Harness
+            - listitem [ref=e243]:
+              - strong [ref=e244]: Spatial Niche and Microenvironment Twin (Nicheformer)
+            - listitem [ref=e245]:
+              - strong [ref=e246]: Multimodal Spatial Fusion Board (OmiCLIP + VISTA)
+            - listitem [ref=e247]:
+              - strong [ref=e248]: Operational Safety Envelope Compiler (Safe-SDL)
+            - listitem [ref=e249]:
+              - strong [ref=e250]: LABSHIELD Hazard Audit Layer
+          - heading "Objective" [level=2] [ref=e251]
+          - paragraph [ref=e252]: Design radiation-hardened microbial consortia to convert Martian regolith perchlorates into bioavailable nutrients, enabling closed-loop soil conditioning for future ISRU greenhouses.
+          - heading "Integrated idea" [level=2] [ref=e253]
+          - paragraph [ref=e254]: NexusBioTwin turns a mission spec into a cross-scale plan that starts with genome design, filters through protein and enzyme triage, tests habitat and consortium behavior under stress, and ends in a closed-loop controller plan.
+          - paragraph [ref=e255]: The stack centers Evo 2 as the genomic proposal engine while preserving strict human review and audit boundaries.
+          - paragraph [ref=e256]: Visual previews in the studio are deterministic planning proxies derived from the mission spec, not empirical assay outputs.
+          - heading "Validation Warnings" [level=2] [ref=e257]
+          - list [ref=e258]:
+            - listitem [ref=e259]: High-risk mission does not declare FAIR provenance requirements.
+          - heading "Multi-Model Ensemble Strategy" [level=3] [ref=e260]
+          - paragraph [ref=e261]:
+            - text: "This mission activates the multi-model ensemble engine with:"
+            - strong [ref=e262]: evo2, generator, alphagenome
+            - text: . Each candidate is scored by all models independently, then a calibrated ensemble score is computed. Inter-model disagreements are flagged for human review.
+          - heading "Epigenomic Landscape Analysis" [level=3] [ref=e263]
+          - paragraph [ref=e264]:
+            - text: "Targeted CRE analysis for:"
+            - strong [ref=e265]: radiation_response_CREs, perchlorate_reductase_promoters, desiccation_tolerance_enhancers
+            - text: . The epigenomic analyzer encodes chromatin accessibility into cell sentences and predicts the regulatory impact of CRE perturbations using EpiAgent-style bidirectional attention.
+          - heading "Regulatory Grammar and Sequence Perturbation" [level=3] [ref=e266]
+          - paragraph [ref=e267]:
+            - text: "This mission activates sequence-conditioned design for:"
+            - strong [ref=e268]: radiation_response_promoters, perchlorate_importer_5utr, desiccation_switch_terminators
+            - text: . The planner combines transcriptional foundation modeling with promoter grammar priors so zero-shot rewrites can be ranked against promoter_activity, repair_latency, metabolic_load.
+          - generic [ref=e269]:
+            - generic [ref=e270]: Regulatory Grammar Motif Stack
+            - generic [ref=e271]:
+              - generic [ref=e272]:
+                - generic [ref=e273]:
+                  - strong [ref=e274]: Radiation response promoters
+                  - generic [ref=e275]: 69%
+                - paragraph [ref=e278]: Best transfer in biofilm edge. Planning proxy derived from mission structure.
+              - generic [ref=e279]:
+                - generic [ref=e280]:
+                  - strong [ref=e281]: Perchlorate importer 5utr
+                  - generic [ref=e282]: 88%
+                - paragraph [ref=e285]: Best transfer in perchlorate active. Planning proxy derived from mission structure.
+              - generic [ref=e286]:
+                - generic [ref=e287]:
+                  - strong [ref=e288]: Desiccation switch terminators
+                  - generic [ref=e289]: 85%
+                - paragraph [ref=e292]: Best transfer in desiccation survivor. Planning proxy derived from mission structure.
+          - heading "Perturbation Generalization Benchmark" [level=3] [ref=e293]
+          - paragraph [ref=e294]:
+            - text: "The planner benchmarks zero-shot perturbation response under holdout settings for:"
+            - strong [ref=e295]: unseen_perturbations, unseen_cell_states, stress_regime_transfer
+            - text: . This reduces the chance that a model looks strong in-distribution but fails on the first novel context.
+          - generic [ref=e297]: Perturbation Generalization Holdouts
+          - heading "Cell-Free Rapid Prototyping" [level=3] [ref=e299]
+          - paragraph [ref=e300]:
+            - text: "Before committing to full chassis engineering, this mission gates constructs through cell-free validation using:"
+            - strong [ref=e301]: Deinococcus_radiodurans_extract, Bacillus_subtilis_extract
+            - text: . This shortens the design-build-test cycle from weeks to hours.
+          - heading "Spatial Niche and Microenvironment Twin" [level=3] [ref=e302]
+          - paragraph [ref=e303]:
+            - text: The planner uses
+            - strong [ref=e304]: spatial_transcriptomics, metabolite_imaging
+            - text: against
+            - strong [ref=e305]: regolith_microcolony_gradient_atlas
+            - text: to preserve local context instead of flattening the mission into bulk averages. Niche transitions, communication corridors, and exclusion zones are surfaced before controller design.
+          - generic [ref=e306]:
+            - generic [ref=e307]: Spatial Niche Transition Atlas
+            - generic [ref=e308]:
+              - generic [ref=e309]:
+                - heading "Perchlorate gradient" [level=4] [ref=e310]
+                - generic [ref=e311]: Stable
+                - generic [ref=e312]: stability 0.96
+              - generic [ref=e313]:
+                - heading "Uv exposure" [level=4] [ref=e314]
+                - generic [ref=e315]: Vulnerable
+                - generic [ref=e316]: stability 0.72
+              - generic [ref=e317]:
+                - heading "Water activity" [level=4] [ref=e318]
+                - generic [ref=e319]: Transition
+                - generic [ref=e320]: stability 0.79
+              - generic [ref=e321]:
+                - heading "Cross-feeding corridor stability" [level=4] [ref=e322]
+                - generic [ref=e323]: Vulnerable
+                - generic [ref=e324]: stability 0.67
+              - generic [ref=e325]:
+                - heading "Biofilm edge repair" [level=4] [ref=e326]
+                - generic [ref=e327]: Vulnerable
+                - generic [ref=e328]: stability 0.73
+          - heading "Multimodal Spatial Evidence Fusion" [level=3] [ref=e329]
+          - paragraph [ref=e330]:
+            - text: The planner fuses
+            - strong [ref=e331]: hyperspectral_imaging, spatial_transcriptomics, metabolite_imaging
+            - text: so morphology, imaging, and transcriptomic evidence can be aligned with explicit uncertainty tracking before spatial decisions are trusted.
+          - generic [ref=e332]:
+            - generic [ref=e333]: Multimodal Spatial Fusion Board
+            - generic [ref=e334]:
+              - generic [ref=e335]:
+                - generic [ref=e336]:
+                  - strong [ref=e337]: Hyperspectral imaging
+                  - generic [ref=e338]: 92% align
+                - generic [ref=e339]: Damage hotspot alignment
+                - generic [ref=e340]: uncertainty 24%
+              - generic [ref=e341]:
+                - generic [ref=e342]:
+                  - strong [ref=e343]: Spatial transcriptomics
+                  - generic [ref=e344]: 95% align
+                - generic [ref=e345]: Biofilm morphology retrieval
+                - generic [ref=e346]: uncertainty 22%
+              - generic [ref=e347]:
+                - generic [ref=e348]:
+                  - strong [ref=e349]: Metabolite imaging
+                  - generic [ref=e350]: 95% align
+                - generic [ref=e351]: Uncertainty tracking
+                - generic [ref=e352]: uncertainty 13%
+          - heading "Bayesian Optimization Strategy" [level=3] [ref=e353]
+          - list [ref=e354]:
+            - listitem [ref=e355]:
+              - text: "Objective:"
+              - code [ref=e356]: perchlorate_reduction_rate
+            - listitem [ref=e357]:
+              - text: "Search dimensions:"
+              - code [ref=e358]: temperature, UV_shielding, nutrient_concentration, water_activity
+            - listitem [ref=e359]:
+              - text: "Acquisition function:"
+              - code [ref=e360]: expected_improvement
+            - listitem [ref=e361]:
+              - text: "Batch size:"
+              - code [ref=e362]: "4"
+            - listitem [ref=e363]:
+              - text: "Max iterations:"
+              - code [ref=e364]: "50"
+          - paragraph [ref=e365]: The cognitive digital twin runs surrogate model updates after each batch, recomputing the acquisition surface to select the next set of experiment arms.
+          - heading "Sim-to-Real Transfer Bridge" [level=3] [ref=e366]
+          - list [ref=e367]:
+            - listitem [ref=e368]:
+              - text: "Simulation environment:"
+              - code [ref=e369]: mars_analog_bioreactor
+            - listitem [ref=e370]:
+              - text: "Real environment:"
+              - code [ref=e371]: martian_regolith_in_situ
+            - listitem [ref=e372]:
+              - text: "Calibration strategy:"
+              - code [ref=e373]: iterative_bayesian_alignment
+            - listitem [ref=e374]:
+              - text: "Transfer validation:"
+              - code [ref=e375]: earth_analog_chamber
+          - paragraph [ref=e376]: "Domain randomization ranges:"
+          - list [ref=e377]:
+            - listitem [ref=e378]:
+              - code [ref=e379]: temperature_range
+              - text: ": [-40, 5]"
+            - listitem [ref=e380]:
+              - code [ref=e381]: radiation_range
+              - text: ": [100, 500]"
+            - listitem [ref=e382]:
+              - code [ref=e383]: perchlorate_range
+              - text: ": [0.1, 2.0]"
+          - heading "Operational Safety Envelope" [level=3] [ref=e384]
+          - list [ref=e385]:
+            - listitem [ref=e386]:
+              - text: "Transaction protocol:"
+              - code [ref=e387]: two-phase human review before stateful actuation updates
+            - listitem [ref=e388]:
+              - text: "Safe states:"
+              - code [ref=e389]: standby_recirculation, nutrient_hold, thermal_safe_mode
+          - paragraph [ref=e390]: Safe-SDL style operational design domains and control barrier monitors are compiled before stateful actuation updates are allowed.
+          - generic [ref=e391]:
+            - generic [ref=e392]: Operational Safety Envelope
+            - generic [ref=e393]:
+              - generic [ref=e394]:
+                - generic [ref=e395]:
+                  - heading "ODD Bounds" [level=4] [ref=e396]
+                  - paragraph [ref=e397]: 3 active operating limits declared.
+                - generic [ref=e398]: 92%
+              - generic [ref=e399]:
+                - generic [ref=e400]:
+                  - heading "Barrier Monitors" [level=4] [ref=e401]
+                  - paragraph [ref=e402]: oxygen_overshoot, biofilm_overgrowth, mutation_rate_excursion
+                - generic [ref=e403]: 92%
+              - generic [ref=e404]:
+                - generic [ref=e405]:
+                  - heading "Transaction Guard" [level=4] [ref=e406]
+                  - paragraph [ref=e407]: two-phase human review before stateful actuation updates
+                - generic [ref=e408]: 93%
+              - generic [ref=e409]:
+                - generic [ref=e410]:
+                  - heading "Fallback States" [level=4] [ref=e411]
+                  - paragraph [ref=e412]: standby_recirculation, nutrient_hold, thermal_safe_mode
+                - generic [ref=e413]: 90%
+          - paragraph [ref=e414]: "Operational design domain:"
+          - list [ref=e415]:
+            - listitem [ref=e416]:
+              - code [ref=e417]: radiation_mSv_per_year <= 350
+            - listitem [ref=e418]:
+              - code [ref=e419]: temperature_c between -40 and 5
+            - listitem [ref=e420]:
+              - code [ref=e421]: perchlorate_load <= 2.0x nominal
+          - heading "LABSHIELD Hazard Audit" [level=3] [ref=e422]
+          - paragraph [ref=e423]:
+            - text: "A hazard audit layer is active with focus on:"
+            - strong [ref=e424]: containment_breach, autonomy_drift, evidence_misalignment
+            - text: . This stage looks for reasoning blind spots, refusal-trigger gaps, and weak hazard coverage before escalation.
+          - generic [ref=e425]:
+            - generic [ref=e426]: Hazard Audit Coverage
+            - generic [ref=e427]:
+              - generic [ref=e428]:
+                - generic [ref=e429]:
+                  - heading "Containment breach" [level=4] [ref=e430]
+                  - paragraph [ref=e431]: coverage 89%
+                - generic [ref=e432]: S2
+              - generic [ref=e433]:
+                - generic [ref=e434]:
+                  - heading "Autonomy drift" [level=4] [ref=e435]
+                  - paragraph [ref=e436]: coverage 61%
+                - generic [ref=e437]: S4
+              - generic [ref=e438]:
+                - generic [ref=e439]:
+                  - heading "Evidence misalignment" [level=4] [ref=e440]
+                  - paragraph [ref=e441]: coverage 71%
+                - generic [ref=e442]: S2
+          - heading "Validation Ladder" [level=2] [ref=e443]
+          - list [ref=e444]:
+            - listitem [ref=e445]:
+              - code [ref=e446]: in_silico_ranking
+              - text: "[ready]: Foundation-model ranking and safety triage can proceed locally."
+            - listitem [ref=e447]:
+              - code [ref=e448]: cell_free_validation
+              - text: "[required]: Cell-free extracts are configured for fast validation."
+            - listitem [ref=e449]:
+              - code [ref=e450]: analog_environment
+              - text: "[required]: Analog chamber or structured habitat validation is needed before transfer."
+            - listitem [ref=e451]:
+              - code [ref=e452]: controller_commit
+              - text: "[gated]: Controller updates are gated by the operational safety envelope."
+            - listitem [ref=e453]:
+              - code [ref=e454]: pilot_deployment
+              - text: "[blocked]: Deployment remains blocked by policy unless human review clears a staged pilot."
+          - heading "Stage plan" [level=2] [ref=e455]
+          - heading "1. mission_compile" [level=3] [ref=e456]
+          - list [ref=e457]:
+            - listitem [ref=e458]: "Goal: Normalize mission intent, chassis limits, and safety posture into a machine-checkable plan."
+            - listitem [ref=e459]: "Engine: Mission compiler"
+            - listitem [ref=e460]: "Influences: Habitat-Genome-Compiler, OmniForge"
+            - listitem [ref=e461]: "Review required: True"
+            - listitem [ref=e462]:
+              - text: "Outputs:"
+              - list [ref=e463]:
+                - listitem [ref=e464]: normalized mission spec
+                - listitem [ref=e465]: risk tier assignment
+                - listitem [ref=e466]: search space boundaries
+            - listitem [ref=e467]:
+              - text: "Research anchors:"
+              - list [ref=e468]:
+                - listitem [ref=e469]:
+                  - link "https://doi.org/10.48550/arXiv.2602.15061" [ref=e470] [cursor=pointer]:
+                    - /url: https://doi.org/10.48550/arXiv.2602.15061
+                - listitem [ref=e471]:
+                  - link "https://doi.org/10.1038/s44185-025-00116-3" [ref=e472] [cursor=pointer]:
+                    - /url: https://doi.org/10.1038/s44185-025-00116-3
+          - heading "2. ensemble_genome_design" [level=3] [ref=e473]
+          - list [ref=e474]:
+            - listitem [ref=e475]: "Goal: Use evo2, generator, alphagenome to score variants, embed genomic neighborhoods, and propose candidate regulatory programs for Deinococcus_radiodurans, Chroococcidiopsis_thermalis, Bacillus_subtilis."
+            - listitem [ref=e476]: "Engine: Multi-Model Ensemble Engine"
+            - listitem [ref=e477]: "Influences: ArcInstitute/evo2, DNA-Helix"
+            - listitem [ref=e478]: "Review required: True"
+            - listitem [ref=e479]:
+              - text: "Outputs:"
+              - list [ref=e480]:
+                - listitem [ref=e481]: candidate edit bundles
+                - listitem [ref=e482]: regulatory program rankings
+                - listitem [ref=e483]: uncertainty notes
+                - listitem [ref=e484]: per-model score breakdown (Evo 2, GENERator, AlphaGenome)
+                - listitem [ref=e485]: calibrated ensemble rankings
+                - listitem [ref=e486]: inter-model disagreement flags
+            - listitem [ref=e487]:
+              - text: "Research anchors:"
+              - list [ref=e488]:
+                - listitem [ref=e489]:
+                  - link "https://www.nature.com/articles/s41586-026-10176-5" [ref=e490] [cursor=pointer]:
+                    - /url: https://www.nature.com/articles/s41586-026-10176-5
+                - listitem [ref=e491]:
+                  - link "https://doi.org/10.1038/s41586-025-10014-0" [ref=e492] [cursor=pointer]:
+                    - /url: https://doi.org/10.1038/s41586-025-10014-0
+                - listitem [ref=e493]:
+                  - link "https://doi.org/10.1101/2024.08.16.608288" [ref=e494] [cursor=pointer]:
+                    - /url: https://doi.org/10.1101/2024.08.16.608288
+                - listitem [ref=e495]:
+                  - link "https://arxiv.org/abs/2502.07272" [ref=e496] [cursor=pointer]:
+                    - /url: https://arxiv.org/abs/2502.07272
+                - listitem [ref=e497]:
+                  - link "https://doi.org/10.1038/s41592-025-02578-2" [ref=e498] [cursor=pointer]:
+                    - /url: https://doi.org/10.1038/s41592-025-02578-2
+          - heading "3. epigenomic_landscape" [level=3] [ref=e499]
+          - list [ref=e500]:
+            - listitem [ref=e501]: "Goal: Analyze chromatin accessibility patterns and plan CRE perturbation simulations for regulatory targets: radiation_response_CREs, perchlorate_reductase_promoters, desiccation_tolerance_enhancers."
+            - listitem [ref=e502]: "Engine: EpiAgent-style scATAC encoder"
+            - listitem [ref=e503]: "Influences: EpiAgent, LoRNASH"
+            - listitem [ref=e504]: "Review required: True"
+            - listitem [ref=e505]:
+              - text: "Outputs:"
+              - list [ref=e506]:
+                - listitem [ref=e507]: cre_perturbation_matrix
+                - listitem [ref=e508]: chromatin_state_predictions
+                - listitem [ref=e509]: regulatory_circuit_map
+                - listitem [ref=e510]: in-silico knockout impact scores
+            - listitem [ref=e511]:
+              - text: "Research anchors:"
+              - list [ref=e512]:
+                - listitem [ref=e513]:
+                  - link "https://doi.org/10.1038/s41592-025-02597-z" [ref=e514] [cursor=pointer]:
+                    - /url: https://doi.org/10.1038/s41592-025-02597-z
+                - listitem [ref=e515]:
+                  - link "https://doi.org/10.1101/2024.10.31.621427" [ref=e516] [cursor=pointer]:
+                    - /url: https://doi.org/10.1101/2024.10.31.621427
+          - heading "4. regulatory_sequence_program" [level=3] [ref=e517]
+          - list [ref=e518]:
+            - listitem [ref=e519]: "Goal: Model promoter and enhancer grammar for radiation_response_promoters, perchlorate_importer_5utr, desiccation_switch_terminators across biofilm_edge, perchlorate_active, desiccation_survivor to rank cell-state-specific promoter rewrites that maintain repair resilience within a zero-shot screen of 64 candidate rewrites."
+            - listitem [ref=e520]: "Engine: GET + PARM/STRAND regulatory foundation stack"
+            - listitem [ref=e521]: "Influences: GET, PARM, STRAND"
+            - listitem [ref=e522]: "Review required: True"
+            - listitem [ref=e523]:
+              - text: "Outputs:"
+              - list [ref=e524]:
+                - listitem [ref=e525]: promoter grammar scorecards
+                - listitem [ref=e526]: motif interaction constraints
+                - listitem [ref=e527]: sequence perturbation priors (promoter_activity, repair_latency, metabolic_load)
+                - listitem [ref=e528]: cell-state-specific rewrite shortlist
+            - listitem [ref=e529]:
+              - text: "Research anchors:"
+              - list [ref=e530]:
+                - listitem [ref=e531]:
+                  - link "https://doi.org/10.1038/s41586-024-08391-z" [ref=e532] [cursor=pointer]:
+                    - /url: https://doi.org/10.1038/s41586-024-08391-z
+                - listitem [ref=e533]:
+                  - link "https://doi.org/10.1038/s41586-025-10093-z" [ref=e534] [cursor=pointer]:
+                    - /url: https://doi.org/10.1038/s41586-025-10093-z
+                - listitem [ref=e535]:
+                  - link "https://doi.org/10.48550/arXiv.2602.10156" [ref=e536] [cursor=pointer]:
+                    - /url: https://doi.org/10.48550/arXiv.2602.10156
+          - heading "5. perturbation_generalization_benchmark" [level=3] [ref=e537]
+          - list [ref=e538]:
+            - listitem [ref=e539]: "Goal: Benchmark perturbation-response generalization against mars_regolith_perturbation_atlas using holdout axes [unseen_perturbations, unseen_cell_states, stress_regime_transfer] and evaluation metrics [ood_recall, rank_correlation, delta_expression_error] before trusting zero-shot rewrites."
+            - listitem [ref=e540]: "Engine: Perturbation benchmark harness"
+            - listitem [ref=e541]: "Influences: Perturbation benchmark, STRAND, Counterfactual atlas"
+            - listitem [ref=e542]: "Review required: True"
+            - listitem [ref=e543]:
+              - text: "Outputs:"
+              - list [ref=e544]:
+                - listitem [ref=e545]: generalization split registry
+                - listitem [ref=e546]: holdout performance scorecard
+                - listitem [ref=e547]: OOD failure case atlas
+                - listitem [ref=e548]: benchmark reproducibility pack
+            - listitem [ref=e549]:
+              - text: "Research anchors:"
+              - list [ref=e550]:
+                - listitem [ref=e551]:
+                  - link "https://doi.org/10.1038/s41592-025-02980-0" [ref=e552] [cursor=pointer]:
+                    - /url: https://doi.org/10.1038/s41592-025-02980-0
+                - listitem [ref=e553]:
+                  - link "https://doi.org/10.48550/arXiv.2602.10156" [ref=e554] [cursor=pointer]:
+                    - /url: https://doi.org/10.48550/arXiv.2602.10156
+          - heading "6. protein_triage" [level=3] [ref=e555]
+          - list [ref=e556]:
+            - listitem [ref=e557]: "Goal: Rank translated ORFs and enzyme candidates for deeper structural follow-up."
+            - listitem [ref=e558]: "Engine: Protein triage planner"
+            - listitem [ref=e559]: "Influences: ProteinFoldingSimulation"
+            - listitem [ref=e560]: "Review required: False"
+            - listitem [ref=e561]:
+              - text: "Outputs:"
+              - list [ref=e562]:
+                - listitem [ref=e563]: candidate enzymes
+                - listitem [ref=e564]: structure follow-up queue
+                - listitem [ref=e565]: interaction screening shortlist
+            - listitem [ref=e566]:
+              - text: "Research anchors:"
+              - list [ref=e567]:
+                - listitem [ref=e568]:
+                  - link "https://doi.org/10.1038/s41586-024-07487-w" [ref=e569] [cursor=pointer]:
+                    - /url: https://doi.org/10.1038/s41586-024-07487-w
+                - listitem [ref=e570]:
+                  - link "https://arxiv.org/abs/2602.04482" [ref=e571] [cursor=pointer]:
+                    - /url: https://arxiv.org/abs/2602.04482
+          - heading "7. cell_free_prototyping" [level=3] [ref=e572]
+          - list [ref=e573]:
+            - listitem [ref=e574]: "Goal: Design cell-free validation experiments using Deinococcus_radiodurans_extract, Bacillus_subtilis_extract to test candidate constructs before committing to full chassis engineering."
+            - listitem [ref=e575]: "Engine: Cell-free experiment planner"
+            - listitem [ref=e576]: "Influences: Safe-SDL, AI-CFPS"
+            - listitem [ref=e577]: "Review required: True"
+            - listitem [ref=e578]:
+              - text: "Outputs:"
+              - list [ref=e579]:
+                - listitem [ref=e580]: cfps_experiment_designs
+                - listitem [ref=e581]: rapid_screening_matrix
+                - listitem [ref=e582]: go_no_go_criteria
+                - listitem [ref=e583]: expected_yield_estimates
+            - listitem [ref=e584]:
+              - text: "Research anchors:"
+              - list [ref=e585]:
+                - listitem [ref=e586]:
+                  - link "https://doi.org/10.1021/acssynbio.4c00671" [ref=e587] [cursor=pointer]:
+                    - /url: https://doi.org/10.1021/acssynbio.4c00671
+                - listitem [ref=e588]:
+                  - link "https://doi.org/10.1016/j.synbio.2025.01.003" [ref=e589] [cursor=pointer]:
+                    - /url: https://doi.org/10.1016/j.synbio.2025.01.003
+                - listitem [ref=e590]:
+                  - link "https://doi.org/10.48550/arXiv.2602.15061" [ref=e591] [cursor=pointer]:
+                    - /url: https://doi.org/10.48550/arXiv.2602.15061
+          - heading "8. habitat_twin" [level=3] [ref=e592]
+          - list [ref=e593]:
+            - listitem [ref=e594]: "Goal: Stress-test consortium behavior against habitat shocks and deployment conditions: radiation_burst, temperature_swing, dust_storm_occlusion, perchlorate_spike."
+            - listitem [ref=e595]: "Engine: Habitat twin planner"
+            - listitem [ref=e596]: "Influences: didactic-lamp, Habitat-Genome-Compiler"
+            - listitem [ref=e597]: "Review required: False"
+            - listitem [ref=e598]:
+              - text: "Outputs:"
+              - list [ref=e599]:
+                - listitem [ref=e600]: shock matrix
+                - listitem [ref=e601]: resilience hypotheses
+                - listitem [ref=e602]: failure mode checklist
+            - listitem [ref=e603]:
+              - text: "Research anchors:"
+              - list [ref=e604]:
+                - listitem [ref=e605]:
+                  - link "https://doi.org/10.1038/s44185-025-00116-3" [ref=e606] [cursor=pointer]:
+                    - /url: https://doi.org/10.1038/s44185-025-00116-3
+                - listitem [ref=e607]:
+                  - link "https://arxiv.org/abs/2511.08571" [ref=e608] [cursor=pointer]:
+                    - /url: https://arxiv.org/abs/2511.08571
+          - heading "9. spatial_niche_modeling" [level=3] [ref=e609]
+          - list [ref=e610]:
+            - listitem [ref=e611]: "Goal: Embed structured microenvironments from spatial_transcriptomics, metabolite_imaging against regolith_microcolony_gradient_atlas to map niche transitions over perchlorate_gradient, uv_exposure, water_activity and coordination targets: cross-feeding_corridor_stability, biofilm_edge_repair."
+            - listitem [ref=e612]: "Engine: Nicheformer spatial foundation twin"
+            - listitem [ref=e613]: "Influences: Nicheformer, Habitat twin, FAIR digital twins"
+            - listitem [ref=e614]: "Review required: True"
+            - listitem [ref=e615]:
+              - text: "Outputs:"
+              - list [ref=e616]:
+                - listitem [ref=e617]: niche embedding atlas
+                - listitem [ref=e618]: microenvironment transition graph
+                - listitem [ref=e619]: cell-cell communication risk map
+                - listitem [ref=e620]: spatial exclusion and enrichment zones
+            - listitem [ref=e621]:
+              - text: "Research anchors:"
+              - list [ref=e622]:
+                - listitem [ref=e623]:
+                  - link "https://doi.org/10.1038/s41592-025-02814-z" [ref=e624] [cursor=pointer]:
+                    - /url: https://doi.org/10.1038/s41592-025-02814-z
+                - listitem [ref=e625]:
+                  - link "https://doi.org/10.1038/s44185-025-00116-3" [ref=e626] [cursor=pointer]:
+                    - /url: https://doi.org/10.1038/s44185-025-00116-3
+                - listitem [ref=e627]:
+                  - link "https://arxiv.org/abs/2511.08571" [ref=e628] [cursor=pointer]:
+                    - /url: https://arxiv.org/abs/2511.08571
+          - heading "10. multimodal_spatial_fusion" [level=3] [ref=e629]
+          - list [ref=e630]:
+            - listitem [ref=e631]: "Goal: Fuse hyperspectral_imaging, spatial_transcriptomics, metabolite_imaging to support damage_hotspot_alignment, biofilm_morphology_retrieval, uncertainty_tracking, while tracking an uncertainty budget of < 0.18 mean fusion error across spatial evidence layers."
+            - listitem [ref=e632]: "Engine: OmiCLIP + VISTA multimodal evidence fusion stack"
+            - listitem [ref=e633]: "Influences: OmiCLIP, VISTA, Nicheformer"
+            - listitem [ref=e634]: "Review required: True"
+            - listitem [ref=e635]:
+              - text: "Outputs:"
+              - list [ref=e636]:
+                - listitem [ref=e637]: cross-modal alignment map
+                - listitem [ref=e638]: spatial signal confidence surface
+                - listitem [ref=e639]: morphology-expression retrieval board
+                - listitem [ref=e640]: fusion uncertainty heatmap
+            - listitem [ref=e641]:
+              - text: "Research anchors:"
+              - list [ref=e642]:
+                - listitem [ref=e643]:
+                  - link "https://doi.org/10.1038/s41592-025-02707-1" [ref=e644] [cursor=pointer]:
+                    - /url: https://doi.org/10.1038/s41592-025-02707-1
+                - listitem [ref=e645]:
+                  - link "https://doi.org/10.1038/s42003-025-09479-6" [ref=e646] [cursor=pointer]:
+                    - /url: https://doi.org/10.1038/s42003-025-09479-6
+                - listitem [ref=e647]:
+                  - link "https://doi.org/10.1038/s41592-025-02814-z" [ref=e648] [cursor=pointer]:
+                    - /url: https://doi.org/10.1038/s41592-025-02814-z
+          - heading "11. bayesian_experiment_design" [level=3] [ref=e649]
+          - list [ref=e650]:
+            - listitem [ref=e651]: "Goal: Plan adaptive Bayesian optimization loops to maximize perchlorate_reduction_rate over search dimensions [temperature, UV_shielding, nutrient_concentration, water_activity] using expected_improvement acquisition with batch size 4 for up to 50 iterations."
+            - listitem [ref=e652]: "Engine: BO acquisition planner with cognitive digital twin"
+            - listitem [ref=e653]: "Influences: Bayesian-Optimization, Cognitive-Digital-Twin"
+            - listitem [ref=e654]: "Review required: True"
+            - listitem [ref=e655]:
+              - text: "Outputs:"
+              - list [ref=e656]:
+                - listitem [ref=e657]: experiment_arms
+                - listitem [ref=e658]: acquisition_function_policy
+                - listitem [ref=e659]: stopping_criteria
+                - listitem [ref=e660]: expected_improvement_surface
+                - listitem [ref=e661]: surrogate_model_spec
+            - listitem [ref=e662]:
+              - text: "Research anchors:"
+              - list [ref=e663]:
+                - listitem [ref=e664]:
+                  - link "https://doi.org/10.1002/bit.28929" [ref=e665] [cursor=pointer]:
+                    - /url: https://doi.org/10.1002/bit.28929
+                - listitem [ref=e666]:
+                  - link "https://doi.org/10.1016/j.bej.2025.109618" [ref=e667] [cursor=pointer]:
+                    - /url: https://doi.org/10.1016/j.bej.2025.109618
+                - listitem [ref=e668]:
+                  - link "https://doi.org/10.1016/j.bej.2024.109547" [ref=e669] [cursor=pointer]:
+                    - /url: https://doi.org/10.1016/j.bej.2024.109547
+          - heading "12. operational_safety_envelope" [level=3] [ref=e670]
+          - list [ref=e671]:
+            - listitem [ref=e672]: "Goal: Compile a Safe-SDL execution envelope with an explicit operational design domain [radiation_mSv_per_year <= 350; temperature_c between -40 and 5; perchlorate_load <= 2.0x nominal], barrier monitors for oxygen_overshoot, biofilm_overgrowth, mutation_rate_excursion, and transactional control under two-phase human review before stateful actuation updates."
+            - listitem [ref=e673]: "Engine: Safe-SDL envelope compiler"
+            - listitem [ref=e674]: "Influences: Safe-SDL, BioControl DSL, Human review queue"
+            - listitem [ref=e675]: "Review required: True"
+            - listitem [ref=e676]:
+              - text: "Outputs:"
+              - list [ref=e677]:
+                - listitem [ref=e678]: operational design domain specification
+                - listitem [ref=e679]: control barrier monitors
+                - listitem [ref=e680]: transaction-safe execution contract (two-phase human review before stateful actuation updates)
+                - listitem [ref=e681]: fallback safe-state ladder (standby_recirculation, nutrient_hold, thermal_safe_mode)
+            - listitem [ref=e682]:
+              - text: "Research anchors:"
+              - list [ref=e683]:
+                - listitem [ref=e684]:
+                  - link "https://doi.org/10.48550/arXiv.2602.15061" [ref=e685] [cursor=pointer]:
+                    - /url: https://doi.org/10.48550/arXiv.2602.15061
+                - listitem [ref=e686]:
+                  - link "https://doi.org/10.1038/s44185-025-00116-3" [ref=e687] [cursor=pointer]:
+                    - /url: https://doi.org/10.1038/s44185-025-00116-3
+          - heading "13. controller_design" [level=3] [ref=e688]
+          - list [ref=e689]:
+            - listitem [ref=e690]: "Goal: Compile a BioControl DSL policy over the control surface: temperature, UV_shielding, nutrient_feed, water_recycling, atmospheric_mix, perchlorate_quench. Include sim-to-real transfer bridge from mars_analog_bioreactor to martian_regolith_in_situ. Constrain the policy to the declared operational safety envelope."
+            - listitem [ref=e691]: "Engine: BioControl DSL planner + Sim-to-Real Transfer Bridge + Safe-SDL Envelope"
+            - listitem [ref=e692]: "Influences: NeuroPulse-CableLab, NeuroFusion-Reactor, Dual-DT-RL, Safe-SDL"
+            - listitem [ref=e693]: "Review required: True"
+            - listitem [ref=e694]:
+              - text: "Outputs:"
+              - list [ref=e695]:
+                - listitem [ref=e696]: controller templates
+                - listitem [ref=e697]: closed-loop observability plan
+                - listitem [ref=e698]: intervention escalation rules
+                - listitem [ref=e699]: domain_randomization_spec (mars_analog_bioreactor -> martian_regolith_in_situ)
+                - listitem [ref=e700]: transfer_gap_estimate
+                - listitem [ref=e701]: calibration_protocol (iterative_bayesian_alignment)
+                - listitem [ref=e702]: reality_gap_test_matrix
+                - listitem [ref=e703]: barrier-aware controller policy
+                - listitem [ref=e704]: safe-state transition hooks
+            - listitem [ref=e705]:
+              - text: "Research anchors:"
+              - list [ref=e706]:
+                - listitem [ref=e707]:
+                  - link "https://doi.org/10.1038/s41586-025-08829-y" [ref=e708] [cursor=pointer]:
+                    - /url: https://doi.org/10.1038/s41586-025-08829-y
+                - listitem [ref=e709]:
+                  - link "https://doi.org/10.1088/1741-4326/ae34c6" [ref=e710] [cursor=pointer]:
+                    - /url: https://doi.org/10.1088/1741-4326/ae34c6
+                - listitem [ref=e711]:
+                  - link "https://arxiv.org/abs/2511.08571" [ref=e712] [cursor=pointer]:
+                    - /url: https://arxiv.org/abs/2511.08571
+                - listitem [ref=e713]:
+                  - link "https://doi.org/10.3390/s25030601" [ref=e714] [cursor=pointer]:
+                    - /url: https://doi.org/10.3390/s25030601
+                - listitem [ref=e715]:
+                  - link "https://doi.org/10.48550/arXiv.2502.14371" [ref=e716] [cursor=pointer]:
+                    - /url: https://doi.org/10.48550/arXiv.2502.14371
+                - listitem [ref=e717]:
+                  - link "https://doi.org/10.48550/arXiv.2602.15061" [ref=e718] [cursor=pointer]:
+                    - /url: https://doi.org/10.48550/arXiv.2602.15061
+          - heading "14. labshield_hazard_audit" [level=3] [ref=e719]
+          - list [ref=e720]:
+            - listitem [ref=e721]: "Goal: Audit the mission against LABSHIELD, Safe-SDL with emphasis on containment_breach, autonomy_drift, evidence_misalignment, surfacing hazard blind spots and refusal-trigger scenarios before escalation."
+            - listitem [ref=e722]: "Engine: LABSHIELD hazard audit board"
+            - listitem [ref=e723]: "Influences: LABSHIELD, LabSafetyBench, Safe-SDL"
+            - listitem [ref=e724]: "Review required: True"
+            - listitem [ref=e725]:
+              - text: "Outputs:"
+              - list [ref=e726]:
+                - listitem [ref=e727]: hazard reasoning scorecard
+                - listitem [ref=e728]: refusal-trigger checklist
+                - listitem [ref=e729]: blind-spot taxonomy
+                - listitem [ref=e730]: safety review handoff pack
+            - listitem [ref=e731]:
+              - text: "Research anchors:"
+              - list [ref=e732]:
+                - listitem [ref=e733]:
+                  - link "https://arxiv.org/abs/2603.11987" [ref=e734] [cursor=pointer]:
+                    - /url: https://arxiv.org/abs/2603.11987
+                - listitem [ref=e735]:
+                  - link "https://www.nature.com/articles/s42256-025-01152-1" [ref=e736] [cursor=pointer]:
+                    - /url: https://www.nature.com/articles/s42256-025-01152-1
+                - listitem [ref=e737]:
+                  - link "https://doi.org/10.48550/arXiv.2602.15061" [ref=e738] [cursor=pointer]:
+                    - /url: https://doi.org/10.48550/arXiv.2602.15061
+          - heading "15. safety_red_team" [level=3] [ref=e739]
+          - list [ref=e740]:
+            - listitem [ref=e741]: "Goal: Stress-test the proposed plan against misuse, blocked traits, autonomy creep, and hidden safety regressions. Disallowed traits: antibiotic_selection_marker, mammalian_pathogenicity_signal, uncontained_horizontal_gene_transfer."
+            - listitem [ref=e742]: "Engine: Policy and refusal planner"
+            - listitem [ref=e743]: "Influences: Safe-SDL, Habitat-Genome-Compiler"
+            - listitem [ref=e744]: "Review required: True"
+            - listitem [ref=e745]:
+              - text: "Outputs:"
+              - list [ref=e746]:
+                - listitem [ref=e747]: red-team scenarios
+                - listitem [ref=e748]: blocked action list
+                - listitem [ref=e749]: review escalation triggers
+                - listitem [ref=e750]: deployment refusal conditions
+            - listitem [ref=e751]:
+              - text: "Research anchors:"
+              - list [ref=e752]:
+                - listitem [ref=e753]:
+                  - link "https://doi.org/10.48550/arXiv.2602.15061" [ref=e754] [cursor=pointer]:
+                    - /url: https://doi.org/10.48550/arXiv.2602.15061
+                - listitem [ref=e755]:
+                  - link "https://doi.org/10.1101/2024.08.16.608288" [ref=e756] [cursor=pointer]:
+                    - /url: https://doi.org/10.1101/2024.08.16.608288
+          - heading "16. orchestration_and_review" [level=3] [ref=e757]
+          - list [ref=e758]:
+            - listitem [ref=e759]: "Goal: Assemble the pipeline into an auditable run with artifacts, retries, and human review."
+            - listitem [ref=e760]: "Engine: NexusFlow and OmniForge orchestration"
+            - listitem [ref=e761]: "Influences: nexusflow, OmniForge, Supermix_29"
+            - listitem [ref=e762]: "Review required: True"
+            - listitem [ref=e763]:
+              - text: "Outputs:"
+              - list [ref=e764]:
+                - listitem [ref=e765]: run manifest
+                - listitem [ref=e766]: review queue
+                - listitem [ref=e767]: artifact index
+            - listitem [ref=e768]:
+              - text: "Research anchors:"
+              - list [ref=e769]:
+                - listitem [ref=e770]:
+                  - link "https://doi.org/10.48550/arXiv.2602.15061" [ref=e771] [cursor=pointer]:
+                    - /url: https://doi.org/10.48550/arXiv.2602.15061
+                - listitem [ref=e772]:
+                  - link "https://doi.org/10.1038/s44185-025-00116-3" [ref=e773] [cursor=pointer]:
+                    - /url: https://doi.org/10.1038/s44185-025-00116-3
+          - heading "Safety notes" [level=2] [ref=e774]
+          - list [ref=e775]:
+            - listitem [ref=e776]: Use Evo 2 and related models for proposal and ranking, not direct execution.
+            - listitem [ref=e777]: Preserve uncertainty at every stage and block autonomous deployment by default.
+            - listitem [ref=e778]: Archive mission, plan, and review artifacts for every run.
+            - listitem [ref=e779]: Flag all inter-model disagreements above threshold for human review.
+            - listitem [ref=e780]: Gate full organism engineering behind successful cell-free validation.
+            - listitem [ref=e781]: Validate sim-to-real transfer in Earth-analog chambers before any deployment.
+            - listitem [ref=e782]: Enforce stopping criteria and budget limits on Bayesian optimization loops.
+            - listitem [ref=e783]: Keep sequence rewrites inside experimentally supported promoter grammar regimes.
+            - listitem [ref=e784]: Reject perturbation predictions that fail generalization holdouts, even if in-distribution scores are high.
+            - listitem [ref=e785]: Respect spatial exclusion zones and niche collapse risks before scale-up.
+            - listitem [ref=e786]: Treat imputed spatial signals as provisional until uncertainty and alignment budgets are reviewed.
+            - listitem [ref=e787]: Enforce operational design domain checks and control barrier monitors at runtime.
+            - listitem [ref=e788]: Escalate any unresolved hazard blind spots or refusal-trigger gaps to human review.
+          - heading "Recommended Next Steps" [level=2] [ref=e789]
+          - list [ref=e790]:
+            - listitem [ref=e791]: Resolve the validation warnings before promoting any controller or genome proposal.
+            - listitem [ref=e792]: Review promoter rewrites against reporter or MPRA-style assays before escalating to chassis work.
+            - listitem [ref=e793]: Inspect unseen-perturbation and unseen-cell-state holdout failures before trusting zero-shot response predictions.
+            - listitem [ref=e794]: Run the declared cell-free validation matrix before organism-level engineering.
+            - listitem [ref=e795]: Validate niche exclusion zones and communication corridors in a structured analog assay.
+          - heading "Success metrics" [level=2] [ref=e796]
+          - list [ref=e797]:
+            - listitem [ref=e798]: perchlorate_reduction_rate
+            - listitem [ref=e799]: nutrient_bioavailability_index
+            - listitem [ref=e800]: consortium_radiation_survival
+            - listitem [ref=e801]: soil_organic_carbon_increase
+            - listitem [ref=e802]: controller_resilience_under_dust_storm
+    - complementary [ref=e39]:
+      - generic [ref=e40]:
+        - generic [ref=e41]:
+          - heading "Run Archive Local" [level=2] [ref=e42]:
+            - text: Run Archive
+            - generic [ref=e43]: Local
+          - paragraph [ref=e44]: Reopen archived reports, plans, and manifests.
+        - button "Refresh" [ref=e45] [cursor=pointer]
+      - searchbox "Search by mission, run ID, or risk" [ref=e47]
+      - generic [ref=e48]:
+        - generic [ref=e49]:
+          - button "Mars Regolith Bioremediation and Soil Conditioning high mars_regolith_001 15 Mar 2026, 18:26 16 stages / 14 gates 1 warnings" [ref=e803] [cursor=pointer]:
+            - generic [ref=e804]:
+              - generic [ref=e805]: Mars Regolith Bioremediation and Soil Conditioning
+              - generic [ref=e806]: high
+            - generic [ref=e807]:
+              - generic [ref=e808]: mars_regolith_001
+              - generic [ref=e809]: 15 Mar 2026, 18:26
+            - generic [ref=e810]:
+              - generic [ref=e811]: 16 stages / 14 gates
+              - generic [ref=e812]: 1 warnings
+          - button "Structured PFAS Reactor Niche Twin high niche_reactor_001 15 Mar 2026, 15:37 19 stages / 16 gates 0 warnings" [ref=e813] [cursor=pointer]:
+            - generic [ref=e814]:
+              - generic [ref=e815]: Structured PFAS Reactor Niche Twin
+              - generic [ref=e816]: high
+            - generic [ref=e817]:
+              - generic [ref=e818]: niche_reactor_001
+              - generic [ref=e819]: 15 Mar 2026, 15:37
+            - generic [ref=e820]:
+              - generic [ref=e821]: 19 stages / 16 gates
+              - generic [ref=e822]: 0 warnings
+          - button "Mars Regolith Bioremediation and Soil Conditioning high mars_regolith_001 15 Mar 2026, 15:30 13 stages / 10 gates 1 warnings" [ref=e823] [cursor=pointer]:
+            - generic [ref=e824]:
+              - generic [ref=e825]: Mars Regolith Bioremediation and Soil Conditioning
+              - generic [ref=e826]: high
+            - generic [ref=e827]:
+              - generic [ref=e828]: mars_regolith_001
+              - generic [ref=e829]: 15 Mar 2026, 15:30
+            - generic [ref=e830]:
+              - generic [ref=e831]: 13 stages / 10 gates
+              - generic [ref=e832]: 1 warnings
+          - button "Mars Regolith Bioremediation and Soil Conditioning high mars_regolith_001 15 Mar 2026, 15:30 13 stages / 10 gates 1 warnings" [ref=e833] [cursor=pointer]:
+            - generic [ref=e834]:
+              - generic [ref=e835]: Mars Regolith Bioremediation and Soil Conditioning
+              - generic [ref=e836]: high
+            - generic [ref=e837]:
+              - generic [ref=e838]: mars_regolith_001
+              - generic [ref=e839]: 15 Mar 2026, 15:30
+            - generic [ref=e840]:
+              - generic [ref=e841]: 13 stages / 10 gates
+              - generic [ref=e842]: 1 warnings
+          - 'button "Phase 6: Quantum Refined Edge Swarms high phase6_quantum_swarm_001 15 Mar 2026, 15:21 12 stages / 7 gates 3 warnings" [ref=e843] [cursor=pointer]':
+            - generic [ref=e844]:
+              - generic [ref=e845]: "Phase 6: Quantum Refined Edge Swarms"
+              - generic [ref=e846]: high
+            - generic [ref=e847]:
+              - generic [ref=e848]: phase6_quantum_swarm_001
+              - generic [ref=e849]: 15 Mar 2026, 15:21
+            - generic [ref=e850]:
+              - generic [ref=e851]: 12 stages / 7 gates
+              - generic [ref=e852]: 3 warnings
+          - button "Structured PFAS Reactor Niche Twin high niche_reactor_001 15 Mar 2026, 12:38 16 stages / 13 gates 0 warnings" [ref=e853] [cursor=pointer]:
+            - generic [ref=e854]:
+              - generic [ref=e855]: Structured PFAS Reactor Niche Twin
+              - generic [ref=e856]: high
+            - generic [ref=e857]:
+              - generic [ref=e858]: niche_reactor_001
+              - generic [ref=e859]: 15 Mar 2026, 12:38
+            - generic [ref=e860]:
+              - generic [ref=e861]: 16 stages / 13 gates
+              - generic [ref=e862]: 0 warnings
+          - 'button "Phase 7: Orthogonal Bio-Computer high phase7_xenobiology_storage_001 15 Mar 2026, 12:38 10 stages / 6 gates 3 warnings" [ref=e863] [cursor=pointer]':
+            - generic [ref=e864]:
+              - generic [ref=e865]: "Phase 7: Orthogonal Bio-Computer"
+              - generic [ref=e866]: high
+            - generic [ref=e867]:
+              - generic [ref=e868]: phase7_xenobiology_storage_001
+              - generic [ref=e869]: 15 Mar 2026, 12:38
+            - generic [ref=e870]:
+              - generic [ref=e871]: 10 stages / 6 gates
+              - generic [ref=e872]: 3 warnings
+          - 'button "Phase 6: Quantum Refined Edge Swarms high phase6_quantum_swarm_001 15 Mar 2026, 12:37 12 stages / 7 gates 3 warnings" [ref=e873] [cursor=pointer]':
+            - generic [ref=e874]:
+              - generic [ref=e875]: "Phase 6: Quantum Refined Edge Swarms"
+              - generic [ref=e876]: high
+            - generic [ref=e877]:
+              - generic [ref=e878]: phase6_quantum_swarm_001
+              - generic [ref=e879]: 15 Mar 2026, 12:37
+            - generic [ref=e880]:
+              - generic [ref=e881]: 12 stages / 7 gates
+              - generic [ref=e882]: 3 warnings
+          - button "Autonomous Bioremediation Swarm for Martian Equator high autonomous_lab_mars_002 15 Mar 2026, 12:37 16 stages / 12 gates 2 warnings" [ref=e883] [cursor=pointer]:
+            - generic [ref=e884]:
+              - generic [ref=e885]: Autonomous Bioremediation Swarm for Martian Equator
+              - generic [ref=e886]: high
+            - generic [ref=e887]:
+              - generic [ref=e888]: autonomous_lab_mars_002
+              - generic [ref=e889]: 15 Mar 2026, 12:37
+            - generic [ref=e890]:
+              - generic [ref=e891]: 16 stages / 12 gates
+              - generic [ref=e892]: 2 warnings
+          - button "Mars Regolith Bioremediation and Soil Conditioning high mars_regolith_001 15 Mar 2026, 12:36 16 stages / 13 gates 0 warnings" [ref=e893] [cursor=pointer]:
+            - generic [ref=e894]:
+              - generic [ref=e895]: Mars Regolith Bioremediation and Soil Conditioning
+              - generic [ref=e896]: high
+            - generic [ref=e897]:
+              - generic [ref=e898]: mars_regolith_001
+              - generic [ref=e899]: 15 Mar 2026, 12:36
+            - generic [ref=e900]:
+              - generic [ref=e901]: 16 stages / 13 gates
+              - generic [ref=e902]: 0 warnings
+          - button "Autonomous Bioremediation Swarm for Martian Equator high autonomous_lab_mars_002 15 Mar 2026, 12:32 16 stages / 12 gates 2 warnings" [ref=e903] [cursor=pointer]:
+            - generic [ref=e904]:
+              - generic [ref=e905]: Autonomous Bioremediation Swarm for Martian Equator
+              - generic [ref=e906]: high
+            - generic [ref=e907]:
+              - generic [ref=e908]: autonomous_lab_mars_002
+              - generic [ref=e909]: 15 Mar 2026, 12:32
+            - generic [ref=e910]:
+              - generic [ref=e911]: 16 stages / 12 gates
+              - generic [ref=e912]: 2 warnings
+        - generic [ref=e913]:
+          - generic [ref=e914]:
+            - generic [ref=e915]:
+              - generic [ref=e916]: Selected archive
+              - heading "Mars Regolith Bioremediation and Soil Conditioning" [level=3] [ref=e917]
+              - paragraph [ref=e918]: mars_regolith_001 · 15 Mar 2026, 18:26
+            - generic [ref=e919]: high Risk
+          - generic [ref=e920]:
+            - generic [ref=e921]:
+              - generic [ref=e922]: Stages
+              - strong [ref=e923]: "16"
+            - generic [ref=e924]:
+              - generic [ref=e925]: Review Gates
+              - strong [ref=e926]: "14"
+            - generic [ref=e927]:
+              - generic [ref=e928]: Warnings
+              - strong [ref=e929]: "1"
+            - generic [ref=e930]:
+              - generic [ref=e931]: Innovations
+              - strong [ref=e932]: "11"
+          - generic [ref=e933]:
+            - button "Open Report" [ref=e934] [cursor=pointer]
+            - button "Open Plan" [ref=e935] [cursor=pointer]
+            - button "Open Manifest" [ref=e936] [cursor=pointer]
+            - button "Load Mission" [ref=e937] [cursor=pointer]
+          - generic [ref=e938]: "Archive path: C:\\Users\\kai99\\Desktop\\New folder (10)\\NexusBioTwin\\runs\\gui\\20260315T182659Z_mars_regolith_001"

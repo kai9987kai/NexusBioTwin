@@ -1,0 +1,11 @@
+{
+  "generated_at": "2026-03-14T20:57:16.069659+00:00",
+  "compiler": "nexusbiotwin 0.3.0",
+  "mission_id": "pfas_brine_001",
+  "active_innovations": [],
+  "files": [
+    "manifest.json",
+    "plan.json",
+    "report.md"
+  ]
+}

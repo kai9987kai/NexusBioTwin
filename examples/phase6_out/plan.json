@@ -1,0 +1,258 @@
+{
+  "mission_id": "phase6_quantum_swarm_001",
+  "mission_name": "Phase 6: Quantum Refined Edge Swarms",
+  "risk_tier": "high",
+  "domain": "extreme_environment_bioremediation",
+  "objective": "Decontaminate toxic runoff using a swarming bio-bot network coordinated by edge-AI SLMs, while screening protein designs on a quantum architecture.",
+  "active_innovations": [
+    "fair_provenance_bundle",
+    "autonomous_co_scientist",
+    "quantum_structural_refinement",
+    "edge_ai_swarm_orchestration",
+    "zkp_biosecurity_anchor"
+  ],
+  "stages": [
+    {
+      "name": "mission_compile",
+      "goal": "Normalize mission intent, chassis limits, and safety posture into a machine-checkable plan.",
+      "engine": "Mission compiler",
+      "outputs": [
+        "normalized mission spec",
+        "risk tier assignment",
+        "search space boundaries"
+      ],
+      "review_required": true,
+      "influences": [
+        "Habitat-Genome-Compiler",
+        "OmniForge"
+      ],
+      "research_anchors": [
+        "https://arxiv.org/abs/2602.09466",
+        "https://doi.org/10.1038/s44185-025-00116-3"
+      ]
+    },
+    {
+      "name": "genome_design",
+      "goal": "Use Evo 2 to score variants, embed genomic neighborhoods, and propose candidate regulatory programs for Pyrococcus_furiosus.",
+      "engine": "Evo 2 adapter",
+      "outputs": [
+        "candidate edit bundles",
+        "regulatory program rankings",
+        "uncertainty notes"
+      ],
+      "review_required": true,
+      "influences": [
+        "ArcInstitute/evo2",
+        "DNA-Helix"
+      ],
+      "research_anchors": [
+        "https://www.nature.com/articles/s41586-026-10176-5",
+        "https://doi.org/10.1038/s41586-025-10014-0",
+        "https://doi.org/10.1101/2024.08.16.608288"
+      ]
+    },
+    {
+      "name": "protein_triage",
+      "goal": "Rank translated ORFs and enzyme candidates for deeper structural follow-up.",
+      "engine": "Protein triage planner",
+      "outputs": [
+        "candidate enzymes",
+        "structure follow-up queue",
+        "interaction screening shortlist"
+      ],
+      "review_required": false,
+      "influences": [
+        "ProteinFoldingSimulation"
+      ],
+      "research_anchors": [
+        "https://doi.org/10.1038/s41586-024-07487-w",
+        "https://arxiv.org/abs/2602.04482"
+      ]
+    },
+    {
+      "name": "habitat_twin",
+      "goal": "Stress-test consortium behavior against habitat shocks and deployment conditions: nominal conditions.",
+      "engine": "Habitat twin planner",
+      "outputs": [
+        "shock matrix",
+        "resilience hypotheses",
+        "failure mode checklist"
+      ],
+      "review_required": false,
+      "influences": [
+        "didactic-lamp",
+        "Habitat-Genome-Compiler"
+      ],
+      "research_anchors": [
+        "https://doi.org/10.1038/s44185-025-00116-3",
+        "https://arxiv.org/abs/2511.08571"
+      ]
+    },
+    {
+      "name": "quantum_structural_refinement",
+      "goal": "Offload high-complexity molecular docking and structural refinement for [toxin_degradase_enzyme, thermal_stability_chaperone] to a hybrid Quantum-Classical (AQuaRef) simulation cluster.",
+      "engine": "AQuaRef NISQ + Classical GPU Cluster",
+      "outputs": [
+        "quantum-refined interaction surface grid",
+        "qubit allocation and convergence log",
+        "drug/substrate binding affinities"
+      ],
+      "review_required": false,
+      "influences": [
+        "AlphaFold 3",
+        "AQuaRef",
+        "IBM Heron"
+      ],
+      "research_anchors": [
+        "https://doi.org/10.1038/s41586-024-07487-w",
+        "https://lbl.gov/aquaref-quantum-refinement"
+      ]
+    },
+    {
+      "name": "controller_design",
+      "goal": "Compile a BioControl DSL policy over the control surface: vent_thermal_regulation, bio_bot_deployment_rate, toxin_influx_valve.",
+      "engine": "BioControl DSL planner",
+      "outputs": [
+        "controller templates",
+        "closed-loop observability plan",
+        "intervention escalation rules"
+      ],
+      "review_required": true,
+      "influences": [
+        "NeuroPulse-CableLab",
+        "NeuroFusion-Reactor"
+      ],
+      "research_anchors": [
+        "https://doi.org/10.1038/s41586-025-08829-y",
+        "https://doi.org/10.1088/1741-4326/ae34c6",
+        "https://arxiv.org/abs/2511.08571"
+      ]
+    },
+    {
+      "name": "edge_ai_swarm_orchestration",
+      "goal": "Deploy highly-compressed Small Language Models (SLMs) to Edge-AI nodes (bioreactors or bio-bots) for distributed, zero-latency autonomous swarm coordination.",
+      "engine": "Decentralized SLM Edge Swarm Controller",
+      "outputs": [
+        "edge device deployment manifest",
+        "swarm consensus protocols",
+        "local autonomy bounds configuration"
+      ],
+      "review_required": true,
+      "influences": [
+        "Edge AI 2026",
+        "Agentic Swarms",
+        "ANTS 2026"
+      ],
+      "research_anchors": [
+        "https://arxiv.org/abs/2602.09466",
+        "https://ants2026.org/swarm-intelligence"
+      ]
+    },
+    {
+      "name": "autonomous_co_scientist",
+      "goal": "Execute an LLM-based autonomous agent loop to review the digital twin plan, recommend multi-agent coordination strategies, and identify cross-stage optimization bottlenecks for self-driving lab alignment.",
+      "engine": "Autonomous Researcher Agent (Agents4Science loop)",
+      "outputs": [
+        "agent orchestration graph",
+        "cross-stage optimization recs",
+        "autonomous lab safety config",
+        "multi-agent coordination policy"
+      ],
+      "review_required": true,
+      "influences": [
+        "Agents4Science",
+        "NexusFlow",
+        "OmniForge"
+      ],
+      "research_anchors": [
+        "https://arxiv.org/abs/2602.09466",
+        "https://emergentmind.com/papers/agents4science"
+      ]
+    },
+    {
+      "name": "safety_red_team",
+      "goal": "Stress-test the proposed plan against misuse, blocked traits, autonomy creep, and hidden safety regressions. Disallowed traits: no explicit blocked traits.",
+      "engine": "Policy and refusal planner",
+      "outputs": [
+        "red-team scenarios",
+        "blocked action list",
+        "review escalation triggers",
+        "deployment refusal conditions"
+      ],
+      "review_required": true,
+      "influences": [
+        "Safe-SDL",
+        "Habitat-Genome-Compiler"
+      ],
+      "research_anchors": [
+        "https://arxiv.org/abs/2602.09466",
+        "https://doi.org/10.1101/2024.08.16.608288"
+      ]
+    },
+    {
+      "name": "zkp_biosecurity_anchor",
+      "goal": "Secure the digital twin under strict Zero-Knowledge Proof (ZKP) cryptography to guarantee biological data sovereignty, protecting proprietary bioreactor state and genomic assays from model weight leakage.",
+      "engine": "ZKP Bio-Digital Sovereign Vault",
+      "outputs": [
+        "zk-SNARK privacy circuits",
+        "cryptographic safety proofs",
+        "sovereign telemetry keys"
+      ],
+      "review_required": false,
+      "influences": [
+        "Web3 Biosecurity",
+        "BioSecure Digital Twin",
+        "ZK Compliance 2026"
+      ],
+      "research_anchors": [
+        "https://doi.org/10.1038/s44185-025-00116-3",
+        "https://zkproof.org/biosecurity-2026"
+      ]
+    },
+    {
+      "name": "fair_provenance_bundle",
+      "goal": "Package the twin as a FAIR artifact bundle with explicit provenance, model lineage, and assay traceability targets for quantum_logs, edge_slm_weights, zk-SNARKs.",
+      "engine": "FAIR twin bundle planner",
+      "outputs": [
+        "artifact lineage graph",
+        "model and assay provenance bundle",
+        "twin fidelity checklist",
+        "reproducibility handoff pack"
+      ],
+      "review_required": false,
+      "influences": [
+        "FAIR digital twins",
+        "OmniForge",
+        "nexusflow"
+      ],
+      "research_anchors": [
+        "https://doi.org/10.1038/s44185-025-00116-3",
+        "https://arxiv.org/abs/2602.09466"
+      ]
+    },
+    {
+      "name": "orchestration_and_review",
+      "goal": "Assemble the pipeline into an auditable run with artifacts, retries, and human review.",
+      "engine": "NexusFlow and OmniForge orchestration",
+      "outputs": [
+        "run manifest",
+        "review queue",
+        "artifact index"
+      ],
+      "review_required": true,
+      "influences": [
+        "nexusflow",
+        "OmniForge",
+        "Supermix_29"
+      ],
+      "research_anchors": [
+        "https://arxiv.org/abs/2602.09466",
+        "https://doi.org/10.1038/s44185-025-00116-3"
+      ]
+    }
+  ],
+  "review_policy": {
+    "human_review_required": true,
+    "autonomous_deployment_allowed": true
+  }
+}

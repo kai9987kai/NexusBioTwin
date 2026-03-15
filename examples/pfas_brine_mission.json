@@ -1,0 +1,48 @@
+{
+  "mission_id": "pfas_brine_001",
+  "name": "PFAS Brine Adaptive Bioremediation",
+  "domain": "environmental_biodesign",
+  "objective": "Rank safe genome programs, enzyme targets, and controller strategies for PFAS brine polishing under fluctuating salinity and toxin load.",
+  "environment": {
+    "site_type": "industrial_brine",
+    "temperature_c": 27,
+    "salinity_psu": 42,
+    "oxygenation": "microaerobic",
+    "shock_profile": [
+      "salinity_spike",
+      "toxin_surge",
+      "nutrient_drop"
+    ]
+  },
+  "constraints": {
+    "allowed_chassis": [
+      "Pseudomonas_putida",
+      "Bacillus_subtilis"
+    ],
+    "disallowed_traits": [
+      "antibiotic_selection_marker",
+      "mammalian_pathogenicity_signal"
+    ],
+    "containment_level": "strict",
+    "max_candidate_programs": 8
+  },
+  "control_surface": [
+    "pH",
+    "nutrient_feed",
+    "temperature",
+    "light_cycle",
+    "flow_rate",
+    "toxin_quench"
+  ],
+  "success_metrics": [
+    "pfas_reduction",
+    "community_stability",
+    "energy_efficiency",
+    "controller_resilience"
+  ],
+  "safety_profile": {
+    "human_review_required": true,
+    "autonomous_deployment_allowed": false,
+    "notes": "Use model output for ranking and experimental planning only."
+  }
+}

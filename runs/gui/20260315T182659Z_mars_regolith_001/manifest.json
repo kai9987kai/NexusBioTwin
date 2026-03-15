@@ -1,0 +1,34 @@
+{
+  "generated_at": "2026-03-15T18:26:59.196422+00:00",
+  "compiler": "nexusbiotwin 0.1.0",
+  "mission_id": "mars_regolith_001",
+  "mission_name": "Mars Regolith Bioremediation and Soil Conditioning",
+  "risk_tier": "high",
+  "summary": {
+    "total_stages": 16,
+    "review_gates": 14,
+    "active_innovations": 11,
+    "research_anchors": 30,
+    "control_surface_count": 6,
+    "success_metric_count": 5
+  },
+  "active_innovations": [
+    "multi_model_ensemble",
+    "epigenomic_landscape",
+    "cell_free_prototyping",
+    "bayesian_experiment_design",
+    "sim_to_real_bridge",
+    "regulatory_sequence_program",
+    "perturbation_generalization_benchmark",
+    "spatial_niche_modeling",
+    "multimodal_spatial_fusion",
+    "operational_safety_envelope",
+    "labshield_hazard_audit"
+  ],
+  "files": [
+    "manifest.json",
+    "mission.json",
+    "plan.json",
+    "report.md"
+  ]
+}

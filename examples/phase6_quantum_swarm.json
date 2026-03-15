@@ -1,0 +1,29 @@
+{
+  "mission_id": "phase6_quantum_swarm_001",
+  "name": "Phase 6: Quantum Refined Edge Swarms",
+  "domain": "extreme_environment_bioremediation",
+  "objective": "Decontaminate toxic runoff using a swarming bio-bot network coordinated by edge-AI SLMs, while screening protein designs on a quantum architecture.",
+  "environment": {
+    "site_type": "deep_ocean_vent",
+    "temperature_c": 110,
+    "toxicity": "high"
+  },
+  "constraints": {
+    "allowed_chassis": ["Pyrococcus_furiosus"]
+  },
+  "control_surface": ["vent_thermal_regulation", "bio_bot_deployment_rate", "toxin_influx_valve"],
+  "success_metrics": ["toxin_neutralization_yield", "swarm_survival_rate"],
+  "safety_profile": {
+    "human_review_required": true,
+    "autonomous_deployment_allowed": true,
+    "notes": "Edge-AI swarm orchestrates deployment. ZKP biosecurity is strictly enforced."
+  },
+  "quantum_simulation_targets": ["toxin_degradase_enzyme", "thermal_stability_chaperone"],
+  "edge_swarm_orchestration": true,
+  "zkp_security_level": "strict",
+  "autonomous_co_scientist": true,
+  "provenance_requirements": {
+    "bundle_targets": ["quantum_logs", "edge_slm_weights", "zk-SNARKs"],
+    "twin_fidelity_metrics": ["swarm_cohesion"]
+  }
+}

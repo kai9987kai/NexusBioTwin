@@ -1,0 +1,234 @@
+{
+  "mission_id": "phase7_xenobiology_storage_001",
+  "mission_name": "Phase 7: Orthogonal Bio-Computer",
+  "risk_tier": "high",
+  "domain": "deep_space_data_archival",
+  "objective": "Establish an exabyte-scale living data drive capable of surviving cosmic radiation, isolated from Earth biology via an 8-letter Hachimoji genetic firewall.",
+  "active_innovations": [
+    "fair_provenance_bundle",
+    "hachimoji_transpilation",
+    "bio_hybrid_data_storage",
+    "spatial_whole_cell_sim"
+  ],
+  "stages": [
+    {
+      "name": "mission_compile",
+      "goal": "Normalize mission intent, chassis limits, and safety posture into a machine-checkable plan.",
+      "engine": "Mission compiler",
+      "outputs": [
+        "normalized mission spec",
+        "risk tier assignment",
+        "search space boundaries"
+      ],
+      "review_required": true,
+      "influences": [
+        "Habitat-Genome-Compiler",
+        "OmniForge"
+      ],
+      "research_anchors": [
+        "https://arxiv.org/abs/2602.09466",
+        "https://doi.org/10.1038/s44185-025-00116-3"
+      ]
+    },
+    {
+      "name": "genome_design",
+      "goal": "Use Evo 2 to score variants, embed genomic neighborhoods, and propose candidate regulatory programs for Deinococcus_radiodurans.",
+      "engine": "Evo 2 adapter",
+      "outputs": [
+        "candidate edit bundles",
+        "regulatory program rankings",
+        "uncertainty notes"
+      ],
+      "review_required": true,
+      "influences": [
+        "ArcInstitute/evo2",
+        "DNA-Helix"
+      ],
+      "research_anchors": [
+        "https://www.nature.com/articles/s41586-026-10176-5",
+        "https://doi.org/10.1038/s41586-025-10014-0",
+        "https://doi.org/10.1101/2024.08.16.608288"
+      ]
+    },
+    {
+      "name": "hachimoji_transpilation",
+      "goal": "Expand the canonical 4-letter DNA alphabet to an 8-letter synthetic alphabet (A, T, C, G, Z, P, S, B) to establish a strict genetic firewall and true functional orthogonality.",
+      "engine": "Orthogonal XB Sequence Transpiler",
+      "outputs": [
+        "8-letter orthogonal sequence map",
+        "synthetic polymerase structural models",
+        "genetic firewall safety proof"
+      ],
+      "review_required": true,
+      "influences": [
+        "Xenobiology",
+        "Hachimoji DNA",
+        "Synthetic Biology 2026"
+      ],
+      "research_anchors": [
+        "https://pubmed.ncbi.nlm.nih.gov/30787435/",
+        "https://synbioconference.org/2026"
+      ]
+    },
+    {
+      "name": "protein_triage",
+      "goal": "Rank translated ORFs and enzyme candidates for deeper structural follow-up.",
+      "engine": "Protein triage planner",
+      "outputs": [
+        "candidate enzymes",
+        "structure follow-up queue",
+        "interaction screening shortlist"
+      ],
+      "review_required": false,
+      "influences": [
+        "ProteinFoldingSimulation"
+      ],
+      "research_anchors": [
+        "https://doi.org/10.1038/s41586-024-07487-w",
+        "https://arxiv.org/abs/2602.04482"
+      ]
+    },
+    {
+      "name": "habitat_twin",
+      "goal": "Stress-test consortium behavior against habitat shocks and deployment conditions: nominal conditions.",
+      "engine": "Habitat twin planner",
+      "outputs": [
+        "shock matrix",
+        "resilience hypotheses",
+        "failure mode checklist"
+      ],
+      "review_required": false,
+      "influences": [
+        "didactic-lamp",
+        "Habitat-Genome-Compiler"
+      ],
+      "research_anchors": [
+        "https://doi.org/10.1038/s44185-025-00116-3",
+        "https://arxiv.org/abs/2511.08571"
+      ]
+    },
+    {
+      "name": "bio_hybrid_data_storage",
+      "goal": "Engineer the consortium to act as a living hard drive, encoding [1.5 Exabytes Human Heritage Archive] of data into the swarm's genome using semiconducting perovskite-DNA neuromorphic memory resistors.",
+      "engine": "Neuromorphic DNA Storage Encoder",
+      "outputs": [
+        "bio-orthogonal memory resistor design",
+        "neuromorphic data capacity limits",
+        "DNA-perovskite interaction lattice"
+      ],
+      "review_required": false,
+      "influences": [
+        "Bio-Data Revolution",
+        "Neuromorphic DNA",
+        "Biological Computing 2026"
+      ],
+      "research_anchors": [
+        "https://www.eurekalert.org/news-releases/1033002"
+      ]
+    },
+    {
+      "name": "controller_design",
+      "goal": "Compile a BioControl DSL policy over the control surface: radiation_shielding_protein_expression, dna_repair_enzyme_flux.",
+      "engine": "BioControl DSL planner",
+      "outputs": [
+        "controller templates",
+        "closed-loop observability plan",
+        "intervention escalation rules"
+      ],
+      "review_required": true,
+      "influences": [
+        "NeuroPulse-CableLab",
+        "NeuroFusion-Reactor"
+      ],
+      "research_anchors": [
+        "https://doi.org/10.1038/s41586-025-08829-y",
+        "https://doi.org/10.1088/1741-4326/ae34c6",
+        "https://arxiv.org/abs/2511.08571"
+      ]
+    },
+    {
+      "name": "spatial_whole_cell_sim",
+      "goal": "Run a voxel-transcriptomic 3D whole-cell physics simulation powered by a spatial transcriptomics foundation model to validate spatial cellular context prior to synthesis.",
+      "engine": "Spatial-FM Whole Cell Physics Sandbox",
+      "outputs": [
+        "voxel-by-voxel transcriptomic state map",
+        "3D cellular physics render"
+      ],
+      "review_required": false,
+      "influences": [
+        "scSpatialSIM",
+        "Spatial Transcriptomics FM",
+        "Whole-Cell Simulation 2026"
+      ],
+      "research_anchors": [
+        "https://www.biorxiv.org/content/10.1101/2024.02.26.582046v1",
+        "https://pubmed.ncbi.nlm.nih.gov/38848113/"
+      ]
+    },
+    {
+      "name": "safety_red_team",
+      "goal": "Stress-test the proposed plan against misuse, blocked traits, autonomy creep, and hidden safety regressions. Disallowed traits: no explicit blocked traits.",
+      "engine": "Policy and refusal planner",
+      "outputs": [
+        "red-team scenarios",
+        "blocked action list",
+        "review escalation triggers",
+        "deployment refusal conditions"
+      ],
+      "review_required": true,
+      "influences": [
+        "Safe-SDL",
+        "Habitat-Genome-Compiler"
+      ],
+      "research_anchors": [
+        "https://arxiv.org/abs/2602.09466",
+        "https://doi.org/10.1101/2024.08.16.608288"
+      ]
+    },
+    {
+      "name": "fair_provenance_bundle",
+      "goal": "Package the twin as a FAIR artifact bundle with explicit provenance, model lineage, and assay traceability targets for hachimoji_sequence_map, perovskite_interaction_logs.",
+      "engine": "FAIR twin bundle planner",
+      "outputs": [
+        "artifact lineage graph",
+        "model and assay provenance bundle",
+        "twin fidelity checklist",
+        "reproducibility handoff pack"
+      ],
+      "review_required": false,
+      "influences": [
+        "FAIR digital twins",
+        "OmniForge",
+        "nexusflow"
+      ],
+      "research_anchors": [
+        "https://doi.org/10.1038/s44185-025-00116-3",
+        "https://arxiv.org/abs/2602.09466"
+      ]
+    },
+    {
+      "name": "orchestration_and_review",
+      "goal": "Assemble the pipeline into an auditable run with artifacts, retries, and human review.",
+      "engine": "NexusFlow and OmniForge orchestration",
+      "outputs": [
+        "run manifest",
+        "review queue",
+        "artifact index"
+      ],
+      "review_required": true,
+      "influences": [
+        "nexusflow",
+        "OmniForge",
+        "Supermix_29"
+      ],
+      "research_anchors": [
+        "https://arxiv.org/abs/2602.09466",
+        "https://doi.org/10.1038/s44185-025-00116-3"
+      ]
+    }
+  ],
+  "review_policy": {
+    "human_review_required": true,
+    "autonomous_deployment_allowed": false
+  }
+}

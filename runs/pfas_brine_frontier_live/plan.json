@@ -1,0 +1,298 @@
+{
+  "mission_id": "pfas_brine_frontier_001",
+  "mission_name": "PFAS Brine Counterfactual Frontier Program",
+  "risk_tier": "high",
+  "domain": "environmental_biodesign",
+  "objective": "Design a safe, uncertainty-aware PFAS brine polishing program with explicit what-if edit analysis, Pareto frontier ranking, and FAIR twin provenance.",
+  "active_innovations": [
+    "multi_model_ensemble",
+    "epigenomic_landscape",
+    "cell_free_prototyping",
+    "bayesian_experiment_design",
+    "sim_to_real_bridge",
+    "counterfactual_variant_atlas",
+    "multiobjective_frontier",
+    "fair_provenance_bundle"
+  ],
+  "stages": [
+    {
+      "name": "mission_compile",
+      "goal": "Normalize mission intent, chassis limits, and safety posture into a machine-checkable plan.",
+      "engine": "Mission compiler",
+      "outputs": [
+        "normalized mission spec",
+        "risk tier assignment",
+        "search space boundaries"
+      ],
+      "review_required": true,
+      "influences": [
+        "Habitat-Genome-Compiler",
+        "OmniForge"
+      ],
+      "research_anchors": [
+        "https://arxiv.org/abs/2602.09466",
+        "https://doi.org/10.1038/s44185-025-00116-3"
+      ]
+    },
+    {
+      "name": "ensemble_genome_design",
+      "goal": "Use Evo 2, AlphaGenome, GENErator to score variants, embed genomic neighborhoods, and propose candidate regulatory programs for Pseudomonas_putida, Bacillus_subtilis.",
+      "engine": "Multi-Model Ensemble Engine",
+      "outputs": [
+        "candidate edit bundles",
+        "regulatory program rankings",
+        "uncertainty notes",
+        "per-model score breakdown (Evo 2, GENERator, AlphaGenome)",
+        "calibrated ensemble rankings",
+        "inter-model disagreement flags"
+      ],
+      "review_required": true,
+      "influences": [
+        "ArcInstitute/evo2",
+        "DNA-Helix"
+      ],
+      "research_anchors": [
+        "https://www.nature.com/articles/s41586-026-10176-5",
+        "https://doi.org/10.1038/s41586-025-10014-0",
+        "https://doi.org/10.1101/2024.08.16.608288",
+        "https://arxiv.org/abs/2502.07272",
+        "https://doi.org/10.1038/s41592-025-02578-2"
+      ]
+    },
+    {
+      "name": "epigenomic_landscape",
+      "goal": "Analyze chromatin accessibility patterns and plan CRE perturbation simulations for regulatory targets: pfas_response_promoters, stress_response_cre, efflux_regulators.",
+      "engine": "EpiAgent-style scATAC encoder",
+      "outputs": [
+        "cre_perturbation_matrix",
+        "chromatin_state_predictions",
+        "regulatory_circuit_map",
+        "in-silico knockout impact scores"
+      ],
+      "review_required": true,
+      "influences": [
+        "EpiAgent",
+        "LoRNASH"
+      ],
+      "research_anchors": [
+        "https://doi.org/10.1038/s41592-025-02597-z",
+        "https://doi.org/10.1101/2024.10.31.621427"
+      ]
+    },
+    {
+      "name": "counterfactual_variant_atlas",
+      "goal": "Construct a counterfactual regulatory atlas that answers mission-specific what-if edit questions: What if stress-response promoters are strengthened while efflux burden is capped?; What if toxin-quench activation is delayed until salinity spike recovery?; What edits increase PFAS reduction without degrading community stability?.",
+      "engine": "Counterfactual atlas planner",
+      "outputs": [
+        "variant impact atlas",
+        "regulatory what-if table",
+        "safe edit exclusion list",
+        "uncertainty-ranked intervention windows"
+      ],
+      "review_required": true,
+      "influences": [
+        "ArcInstitute/evo2",
+        "AlphaGenome"
+      ],
+      "research_anchors": [
+        "https://www.nature.com/articles/s41586-026-10176-5",
+        "https://doi.org/10.1038/s41586-025-10014-0",
+        "https://doi.org/10.1101/2024.08.16.608288"
+      ]
+    },
+    {
+      "name": "protein_triage",
+      "goal": "Rank translated ORFs and enzyme candidates for deeper structural follow-up.",
+      "engine": "Protein triage planner",
+      "outputs": [
+        "candidate enzymes",
+        "structure follow-up queue",
+        "interaction screening shortlist"
+      ],
+      "review_required": false,
+      "influences": [
+        "ProteinFoldingSimulation"
+      ],
+      "research_anchors": [
+        "https://doi.org/10.1038/s41586-024-07487-w",
+        "https://arxiv.org/abs/2602.04482"
+      ]
+    },
+    {
+      "name": "cell_free_prototyping",
+      "goal": "Design cell-free validation experiments using e_coli_extract, bacillus_extract to test candidate constructs before committing to full chassis engineering.",
+      "engine": "Cell-free experiment planner",
+      "outputs": [
+        "cfps_experiment_designs",
+        "rapid_screening_matrix",
+        "go_no_go_criteria",
+        "expected_yield_estimates"
+      ],
+      "review_required": true,
+      "influences": [
+        "Safe-SDL",
+        "AI-CFPS"
+      ],
+      "research_anchors": [
+        "https://doi.org/10.1021/acssynbio.4c00671",
+        "https://doi.org/10.1016/j.synbio.2025.01.003",
+        "https://arxiv.org/abs/2602.09466"
+      ]
+    },
+    {
+      "name": "habitat_twin",
+      "goal": "Stress-test consortium behavior against habitat shocks and deployment conditions: salinity_spike, toxin_surge, nutrient_drop, temperature_excursion.",
+      "engine": "Habitat twin planner",
+      "outputs": [
+        "shock matrix",
+        "resilience hypotheses",
+        "failure mode checklist"
+      ],
+      "review_required": false,
+      "influences": [
+        "didactic-lamp",
+        "Habitat-Genome-Compiler"
+      ],
+      "research_anchors": [
+        "https://doi.org/10.1038/s44185-025-00116-3",
+        "https://arxiv.org/abs/2511.08571"
+      ]
+    },
+    {
+      "name": "multiobjective_frontier",
+      "goal": "Compute a Pareto frontier across mission tradeoffs to avoid collapsing the search into a single score. Frontier objectives: pfas_reduction, community_stability, energy_efficiency, biosafety_margin.",
+      "engine": "Pareto frontier planner",
+      "outputs": [
+        "pareto frontier candidates",
+        "tradeoff matrix",
+        "dominated candidate rejects",
+        "budget-aware follow-up recommendations"
+      ],
+      "review_required": true,
+      "influences": [
+        "Bayesian-Optimization",
+        "Habitat twin",
+        "Consortium control"
+      ],
+      "research_anchors": [
+        "https://doi.org/10.1002/bit.28929",
+        "https://doi.org/10.1016/j.bej.2025.109618",
+        "https://arxiv.org/abs/2511.08571"
+      ]
+    },
+    {
+      "name": "bayesian_experiment_design",
+      "goal": "Plan adaptive Bayesian optimization loops to maximize maximize_pfas_reduction_under_energy_and_safety_constraints over search dimensions [nutrient_feed, flow_rate, oxygen_pulse, temperature] using expected_hypervolume_improvement acquisition with batch size 3 for up to 18 iterations.",
+      "engine": "BO acquisition planner with cognitive digital twin",
+      "outputs": [
+        "experiment_arms",
+        "acquisition_function_policy",
+        "stopping_criteria",
+        "expected_improvement_surface",
+        "surrogate_model_spec"
+      ],
+      "review_required": true,
+      "influences": [
+        "Bayesian-Optimization",
+        "Cognitive-Digital-Twin"
+      ],
+      "research_anchors": [
+        "https://doi.org/10.1002/bit.28929",
+        "https://doi.org/10.1016/j.bej.2025.109618",
+        "https://doi.org/10.1016/j.bej.2024.109547"
+      ]
+    },
+    {
+      "name": "controller_design",
+      "goal": "Compile a BioControl DSL policy over the control surface: pH, nutrient_feed, temperature, light_cycle, flow_rate, toxin_quench, oxygen_pulse. Include sim-to-real transfer bridge from habitat_twin_brine_reactor to pilot_scale_brine_reactor.",
+      "engine": "BioControl DSL planner + Sim-to-Real Transfer Bridge",
+      "outputs": [
+        "controller templates",
+        "closed-loop observability plan",
+        "intervention escalation rules",
+        "domain_randomization_spec (habitat_twin_brine_reactor \u2192 pilot_scale_brine_reactor)",
+        "transfer_gap_estimate",
+        "calibration_protocol (earth_analog_stepwise)",
+        "reality_gap_test_matrix"
+      ],
+      "review_required": true,
+      "influences": [
+        "NeuroPulse-CableLab",
+        "NeuroFusion-Reactor",
+        "Dual-DT-RL"
+      ],
+      "research_anchors": [
+        "https://doi.org/10.1038/s41586-025-08829-y",
+        "https://doi.org/10.1088/1741-4326/ae34c6",
+        "https://arxiv.org/abs/2511.08571",
+        "https://doi.org/10.3390/s25030601",
+        "https://doi.org/10.48550/arXiv.2502.14371"
+      ]
+    },
+    {
+      "name": "safety_red_team",
+      "goal": "Stress-test the proposed plan against misuse, blocked traits, autonomy creep, and hidden safety regressions. Disallowed traits: antibiotic_selection_marker, mammalian_pathogenicity_signal, unbounded_horizontal_transfer.",
+      "engine": "Policy and refusal planner",
+      "outputs": [
+        "red-team scenarios",
+        "blocked action list",
+        "review escalation triggers",
+        "deployment refusal conditions"
+      ],
+      "review_required": true,
+      "influences": [
+        "Safe-SDL",
+        "Habitat-Genome-Compiler"
+      ],
+      "research_anchors": [
+        "https://arxiv.org/abs/2602.09466",
+        "https://doi.org/10.1101/2024.08.16.608288"
+      ]
+    },
+    {
+      "name": "fair_provenance_bundle",
+      "goal": "Package the twin as a FAIR artifact bundle with explicit provenance, model lineage, and assay traceability targets for data, models, workflows, assays.",
+      "engine": "FAIR twin bundle planner",
+      "outputs": [
+        "artifact lineage graph",
+        "model and assay provenance bundle",
+        "twin fidelity checklist",
+        "reproducibility handoff pack"
+      ],
+      "review_required": false,
+      "influences": [
+        "FAIR digital twins",
+        "OmniForge",
+        "nexusflow"
+      ],
+      "research_anchors": [
+        "https://doi.org/10.1038/s44185-025-00116-3",
+        "https://arxiv.org/abs/2602.09466"
+      ]
+    },
+    {
+      "name": "orchestration_and_review",
+      "goal": "Assemble the pipeline into an auditable run with artifacts, retries, and human review.",
+      "engine": "NexusFlow and OmniForge orchestration",
+      "outputs": [
+        "run manifest",
+        "review queue",
+        "artifact index"
+      ],
+      "review_required": true,
+      "influences": [
+        "nexusflow",
+        "OmniForge",
+        "Supermix_29"
+      ],
+      "research_anchors": [
+        "https://arxiv.org/abs/2602.09466",
+        "https://doi.org/10.1038/s44185-025-00116-3"
+      ]
+    }
+  ],
+  "review_policy": {
+    "human_review_required": true,
+    "autonomous_deployment_allowed": false
+  }
+}

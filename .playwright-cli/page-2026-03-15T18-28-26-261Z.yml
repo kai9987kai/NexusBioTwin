@@ -1,0 +1,150 @@
+- generic [ref=e5]:
+  - banner [ref=e6]:
+    - heading "NexusBioTwin Mission Studio" [level=1] [ref=e9]
+    - generic [ref=e10]:
+      - button "Load Mars Example" [ref=e11] [cursor=pointer]
+      - button "Load Autonomous Lab" [ref=e12] [cursor=pointer]
+      - button "Load Quantum Swarm" [ref=e13] [cursor=pointer]
+      - button "Load Orthogonal Bio-Computer" [ref=e14] [cursor=pointer]
+      - button "Load Niche Reactor" [ref=e15] [cursor=pointer]
+  - main [ref=e16]:
+    - generic [ref=e17]:
+      - generic [ref=e18]:
+        - heading "Mission Specification JSON" [level=2] [ref=e19]:
+          - text: Mission Specification
+          - generic [ref=e20]: JSON
+        - button "Compile Mission" [ref=e21] [cursor=pointer]:
+          - generic [ref=e22]: Compile Mission
+      - textbox "Enter mission JSON here..." [ref=e24]: "{ \"message\": \"Paste mission JSON here\" }"
+    - generic [ref=e25]:
+      - generic [ref=e26]:
+        - generic [ref=e27]:
+          - heading "Dossier" [level=2] [ref=e28]
+          - generic [ref=e29]: Live compile workspace
+        - generic [ref=e30]:
+          - button "Report" [ref=e31] [cursor=pointer]
+          - button "Raw Plan" [ref=e32] [cursor=pointer]
+          - button "Manifest" [ref=e33] [cursor=pointer]
+      - generic [ref=e35]:
+        - paragraph [ref=e37]: Ready to compile.
+        - generic [ref=e38]: Awaiting mission specification...
+    - complementary [ref=e39]:
+      - generic [ref=e40]:
+        - generic [ref=e41]:
+          - heading "Run Archive Local" [level=2] [ref=e42]:
+            - text: Run Archive
+            - generic [ref=e43]: Local
+          - paragraph [ref=e44]: Reopen archived reports, plans, and manifests.
+        - button "Refresh" [ref=e45] [cursor=pointer]
+      - searchbox "Search by mission, run ID, or risk" [ref=e47]
+      - generic [ref=e49]:
+        - button "Mars Regolith Bioremediation and Soil Conditioning high mars_regolith_001 15 Mar 2026, 18:26 16 stages / 14 gates 1 warnings" [ref=e50] [cursor=pointer]:
+          - generic [ref=e51]:
+            - generic [ref=e52]: Mars Regolith Bioremediation and Soil Conditioning
+            - generic [ref=e53]: high
+          - generic [ref=e54]:
+            - generic [ref=e55]: mars_regolith_001
+            - generic [ref=e56]: 15 Mar 2026, 18:26
+          - generic [ref=e57]:
+            - generic [ref=e58]: 16 stages / 14 gates
+            - generic [ref=e59]: 1 warnings
+        - button "Structured PFAS Reactor Niche Twin high niche_reactor_001 15 Mar 2026, 15:37 19 stages / 16 gates 0 warnings" [ref=e60] [cursor=pointer]:
+          - generic [ref=e61]:
+            - generic [ref=e62]: Structured PFAS Reactor Niche Twin
+            - generic [ref=e63]: high
+          - generic [ref=e64]:
+            - generic [ref=e65]: niche_reactor_001
+            - generic [ref=e66]: 15 Mar 2026, 15:37
+          - generic [ref=e67]:
+            - generic [ref=e68]: 19 stages / 16 gates
+            - generic [ref=e69]: 0 warnings
+        - button "Mars Regolith Bioremediation and Soil Conditioning high mars_regolith_001 15 Mar 2026, 15:30 13 stages / 10 gates 1 warnings" [ref=e70] [cursor=pointer]:
+          - generic [ref=e71]:
+            - generic [ref=e72]: Mars Regolith Bioremediation and Soil Conditioning
+            - generic [ref=e73]: high
+          - generic [ref=e74]:
+            - generic [ref=e75]: mars_regolith_001
+            - generic [ref=e76]: 15 Mar 2026, 15:30
+          - generic [ref=e77]:
+            - generic [ref=e78]: 13 stages / 10 gates
+            - generic [ref=e79]: 1 warnings
+        - button "Mars Regolith Bioremediation and Soil Conditioning high mars_regolith_001 15 Mar 2026, 15:30 13 stages / 10 gates 1 warnings" [ref=e80] [cursor=pointer]:
+          - generic [ref=e81]:
+            - generic [ref=e82]: Mars Regolith Bioremediation and Soil Conditioning
+            - generic [ref=e83]: high
+          - generic [ref=e84]:
+            - generic [ref=e85]: mars_regolith_001
+            - generic [ref=e86]: 15 Mar 2026, 15:30
+          - generic [ref=e87]:
+            - generic [ref=e88]: 13 stages / 10 gates
+            - generic [ref=e89]: 1 warnings
+        - 'button "Phase 6: Quantum Refined Edge Swarms high phase6_quantum_swarm_001 15 Mar 2026, 15:21 12 stages / 7 gates 3 warnings" [ref=e90] [cursor=pointer]':
+          - generic [ref=e91]:
+            - generic [ref=e92]: "Phase 6: Quantum Refined Edge Swarms"
+            - generic [ref=e93]: high
+          - generic [ref=e94]:
+            - generic [ref=e95]: phase6_quantum_swarm_001
+            - generic [ref=e96]: 15 Mar 2026, 15:21
+          - generic [ref=e97]:
+            - generic [ref=e98]: 12 stages / 7 gates
+            - generic [ref=e99]: 3 warnings
+        - button "Structured PFAS Reactor Niche Twin high niche_reactor_001 15 Mar 2026, 12:38 16 stages / 13 gates 0 warnings" [ref=e100] [cursor=pointer]:
+          - generic [ref=e101]:
+            - generic [ref=e102]: Structured PFAS Reactor Niche Twin
+            - generic [ref=e103]: high
+          - generic [ref=e104]:
+            - generic [ref=e105]: niche_reactor_001
+            - generic [ref=e106]: 15 Mar 2026, 12:38
+          - generic [ref=e107]:
+            - generic [ref=e108]: 16 stages / 13 gates
+            - generic [ref=e109]: 0 warnings
+        - 'button "Phase 7: Orthogonal Bio-Computer high phase7_xenobiology_storage_001 15 Mar 2026, 12:38 10 stages / 6 gates 3 warnings" [ref=e110] [cursor=pointer]':
+          - generic [ref=e111]:
+            - generic [ref=e112]: "Phase 7: Orthogonal Bio-Computer"
+            - generic [ref=e113]: high
+          - generic [ref=e114]:
+            - generic [ref=e115]: phase7_xenobiology_storage_001
+            - generic [ref=e116]: 15 Mar 2026, 12:38
+          - generic [ref=e117]:
+            - generic [ref=e118]: 10 stages / 6 gates
+            - generic [ref=e119]: 3 warnings
+        - 'button "Phase 6: Quantum Refined Edge Swarms high phase6_quantum_swarm_001 15 Mar 2026, 12:37 12 stages / 7 gates 3 warnings" [ref=e120] [cursor=pointer]':
+          - generic [ref=e121]:
+            - generic [ref=e122]: "Phase 6: Quantum Refined Edge Swarms"
+            - generic [ref=e123]: high
+          - generic [ref=e124]:
+            - generic [ref=e125]: phase6_quantum_swarm_001
+            - generic [ref=e126]: 15 Mar 2026, 12:37
+          - generic [ref=e127]:
+            - generic [ref=e128]: 12 stages / 7 gates
+            - generic [ref=e129]: 3 warnings
+        - button "Autonomous Bioremediation Swarm for Martian Equator high autonomous_lab_mars_002 15 Mar 2026, 12:37 16 stages / 12 gates 2 warnings" [ref=e130] [cursor=pointer]:
+          - generic [ref=e131]:
+            - generic [ref=e132]: Autonomous Bioremediation Swarm for Martian Equator
+            - generic [ref=e133]: high
+          - generic [ref=e134]:
+            - generic [ref=e135]: autonomous_lab_mars_002
+            - generic [ref=e136]: 15 Mar 2026, 12:37
+          - generic [ref=e137]:
+            - generic [ref=e138]: 16 stages / 12 gates
+            - generic [ref=e139]: 2 warnings
+        - button "Mars Regolith Bioremediation and Soil Conditioning high mars_regolith_001 15 Mar 2026, 12:36 16 stages / 13 gates 0 warnings" [ref=e140] [cursor=pointer]:
+          - generic [ref=e141]:
+            - generic [ref=e142]: Mars Regolith Bioremediation and Soil Conditioning
+            - generic [ref=e143]: high
+          - generic [ref=e144]:
+            - generic [ref=e145]: mars_regolith_001
+            - generic [ref=e146]: 15 Mar 2026, 12:36
+          - generic [ref=e147]:
+            - generic [ref=e148]: 16 stages / 13 gates
+            - generic [ref=e149]: 0 warnings
+        - button "Autonomous Bioremediation Swarm for Martian Equator high autonomous_lab_mars_002 15 Mar 2026, 12:32 16 stages / 12 gates 2 warnings" [ref=e150] [cursor=pointer]:
+          - generic [ref=e151]:
+            - generic [ref=e152]: Autonomous Bioremediation Swarm for Martian Equator
+            - generic [ref=e153]: high
+          - generic [ref=e154]:
+            - generic [ref=e155]: autonomous_lab_mars_002
+            - generic [ref=e156]: 15 Mar 2026, 12:32
+          - generic [ref=e157]:
+            - generic [ref=e158]: 16 stages / 12 gates
+            - generic [ref=e159]: 2 warnings

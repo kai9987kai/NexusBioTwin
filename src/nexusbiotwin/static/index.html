@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NexusBioTwin Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+  <!-- Ambient glow background -->
+  <div class="glow glow-1"></div>
+  <div class="glow glow-2"></div>
+  <div class="glow glow-3"></div>
+
+  <div class="app-container">
+    <header class="top-nav glass-panel">
+      <div class="logo">
+        <div class="logo-icon"></div>
+        <h1>NexusBioTwin <span>Mission Studio</span></h1>
+      </div>
+      <div class="nav-actions">
+        <button id="btn-load-sample" class="btn btn-secondary">Load Mars Example</button>
+        <button id="btn-load-autonomous" class="btn btn-secondary">Load Autonomous Lab</button>
+        <button id="btn-load-phase6" class="btn btn-secondary">Load Quantum Swarm</button>
+        <button id="btn-load-phase7" class="btn btn-secondary">Load Orthogonal Bio-Computer</button>
+        <button id="btn-load-niche" class="btn btn-secondary">Load Niche Reactor</button>
+      </div>
+    </header>
+
+    <main class="main-content">
+      
+      <!-- Editor Panel -->
+      <section class="panel-container glass-panel edit-panel">
+        <div class="panel-header">
+          <h2>Mission Specification <span class="badge">JSON</span></h2>
+          <button id="btn-compile" class="btn btn-primary">
+            <span class="btn-text">Compile Mission</span>
+            <span class="spinner hidden"></span>
+          </button>
+        </div>
+        <div class="editor-wrapper">
+          <textarea id="json-editor" spellcheck="false" placeholder="Enter mission JSON here..."></textarea>
+        </div>
+      </section>
+
+      <!-- Output Panel -->
+      <section class="panel-container glass-panel output-panel">
+        <div class="panel-header">
+          <div class="output-heading">
+            <h2>Dossier <span id="risk-badge" class="badge risk-badge hidden">Runtime</span></h2>
+            <span id="output-source" class="output-source">Live compile workspace</span>
+          </div>
+          <div class="tab-group" id="output-tabs">
+            <button class="tab-btn active" data-tab="report">Report</button>
+            <button class="tab-btn" data-tab="plan">Raw Plan</button>
+            <button class="tab-btn" data-tab="manifest">Manifest</button>
+          </div>
+        </div>
+        
+        <div class="output-content">
+          <div id="welcome-msg" class="empty-state">
+            <div class="pulse-ring"></div>
+            <p>Ready to compile.</p>
+            <span>Awaiting mission specification...</span>
+          </div>
+
+          <section id="briefing-panel" class="briefing-panel hidden">
+            <div id="summary-cards" class="summary-cards"></div>
+            <div id="warning-panel" class="warning-panel hidden">
+              <h3>Validation Warnings</h3>
+              <div id="warning-list" class="warning-list"></div>
+            </div>
+            <div class="briefing-grid">
+              <div class="briefing-block">
+                <h3>Validation Ladder</h3>
+                <div id="validation-ladder" class="validation-ladder"></div>
+              </div>
+              <div class="briefing-block">
+                <h3>Next Steps</h3>
+                <div id="next-steps" class="next-steps"></div>
+              </div>
+            </div>
+            <div id="archive-path" class="archive-path"></div>
+          </section>
+          
+          <div id="tab-report" class="tab-pane hidden markdown-body"></div>
+          
+          <div id="tab-plan" class="tab-pane hidden">
+            <pre><code id="plan-output"></code></pre>
+          </div>
+
+          <div id="tab-manifest" class="tab-pane hidden">
+            <pre><code id="manifest-output"></code></pre>
+          </div>
+        </div>
+      </section>
+
+      <aside class="panel-container glass-panel history-panel">
+        <div class="panel-header history-header">
+          <div>
+            <h2>Run Archive <span class="badge">Local</span></h2>
+            <p class="panel-subtitle">Reopen archived reports, plans, and manifests.</p>
+          </div>
+          <button id="btn-refresh-runs" class="btn btn-secondary">Refresh</button>
+        </div>
+
+        <div class="history-toolbar">
+          <input id="run-search" class="history-search" type="search" placeholder="Search by mission, run ID, or risk">
+        </div>
+
+        <div class="history-content">
+          <div id="run-list-empty" class="history-empty">Loading archived runs...</div>
+          <div id="run-list" class="run-list"></div>
+
+          <section id="run-detail" class="run-detail hidden">
+            <div class="run-detail-head">
+              <div>
+                <div class="detail-kicker">Selected archive</div>
+                <h3 id="run-detail-title">No run selected</h3>
+                <p id="run-detail-meta" class="run-detail-meta"></p>
+              </div>
+              <span id="run-detail-risk" class="badge risk-badge hidden">Risk</span>
+            </div>
+            <div id="run-detail-summary" class="run-detail-summary"></div>
+            <div class="history-actions">
+              <button id="btn-history-report" class="btn btn-secondary">Open Report</button>
+              <button id="btn-history-plan" class="btn btn-secondary">Open Plan</button>
+              <button id="btn-history-manifest" class="btn btn-secondary">Open Manifest</button>
+              <button id="btn-history-load-editor" class="btn btn-secondary">Load Mission</button>
+            </div>
+            <div id="run-detail-path" class="archive-path"></div>
+          </section>
+        </div>
+      </aside>
+
+    </main>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="/static/app.js"></script>
+</body>
+</html>

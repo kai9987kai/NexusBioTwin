@@ -1,0 +1,379 @@
+{
+  "mission_id": "mars_regolith_001",
+  "mission_name": "Mars Regolith Bioremediation and Soil Conditioning",
+  "risk_tier": "high",
+  "domain": "offworld_biodesign",
+  "objective": "Design radiation-hardened microbial consortia to convert Martian regolith perchlorates into bioavailable nutrients, enabling closed-loop soil conditioning for future ISRU greenhouses.",
+  "active_innovations": [
+    "multi_model_ensemble",
+    "epigenomic_landscape",
+    "cell_free_prototyping",
+    "bayesian_experiment_design",
+    "sim_to_real_bridge",
+    "counterfactual_variant_atlas",
+    "multiobjective_frontier",
+    "fair_provenance_bundle"
+  ],
+  "stages": [
+    {
+      "name": "mission_compile",
+      "goal": "Normalize mission intent, chassis limits, and safety posture into a machine-checkable plan.",
+      "engine": "Mission compiler",
+      "outputs": [
+        "normalized mission spec",
+        "risk tier assignment",
+        "search space boundaries"
+      ],
+      "review_required": true,
+      "influences": [
+        "Habitat-Genome-Compiler",
+        "OmniForge"
+      ],
+      "research_anchors": [
+        "https://doi.org/10.48550/arXiv.2602.15061",
+        "https://doi.org/10.1038/s44185-025-00116-3"
+      ]
+    },
+    {
+      "name": "ensemble_genome_design",
+      "goal": "Use evo2, generator, alphagenome to score variants, embed genomic neighborhoods, and propose candidate regulatory programs for Deinococcus_radiodurans, Chroococcidiopsis_thermalis, Bacillus_subtilis.",
+      "engine": "Multi-Model Ensemble Engine",
+      "outputs": [
+        "candidate edit bundles",
+        "regulatory program rankings",
+        "uncertainty notes",
+        "per-model score breakdown (Evo 2, GENERator, AlphaGenome)",
+        "calibrated ensemble rankings",
+        "inter-model disagreement flags"
+      ],
+      "review_required": true,
+      "influences": [
+        "ArcInstitute/evo2",
+        "DNA-Helix"
+      ],
+      "research_anchors": [
+        "https://www.nature.com/articles/s41586-026-10176-5",
+        "https://doi.org/10.1038/s41586-025-10014-0",
+        "https://doi.org/10.1101/2024.08.16.608288",
+        "https://arxiv.org/abs/2502.07272",
+        "https://doi.org/10.1038/s41592-025-02578-2"
+      ]
+    },
+    {
+      "name": "epigenomic_landscape",
+      "goal": "Analyze chromatin accessibility patterns and plan CRE perturbation simulations for regulatory targets: radiation_response_CREs, perchlorate_reductase_promoters, desiccation_tolerance_enhancers.",
+      "engine": "EpiAgent-style scATAC encoder",
+      "outputs": [
+        "cre_perturbation_matrix",
+        "chromatin_state_predictions",
+        "regulatory_circuit_map",
+        "in-silico knockout impact scores"
+      ],
+      "review_required": true,
+      "influences": [
+        "EpiAgent",
+        "LoRNASH"
+      ],
+      "research_anchors": [
+        "https://doi.org/10.1038/s41592-025-02597-z",
+        "https://doi.org/10.1101/2024.10.31.621427"
+      ]
+    },
+    {
+      "name": "counterfactual_variant_atlas",
+      "goal": "Construct a counterfactual regulatory atlas that answers mission-specific what-if edit questions: What if we knockout the radiation response network?; What if desiccation tolerance is overexpressed?.",
+      "engine": "Counterfactual atlas planner",
+      "outputs": [
+        "variant impact atlas",
+        "regulatory what-if table",
+        "safe edit exclusion list",
+        "uncertainty-ranked intervention windows"
+      ],
+      "review_required": true,
+      "influences": [
+        "ArcInstitute/evo2",
+        "AlphaGenome"
+      ],
+      "research_anchors": [
+        "https://www.nature.com/articles/s41586-026-10176-5",
+        "https://doi.org/10.1038/s41586-025-10014-0",
+        "https://doi.org/10.1101/2024.08.16.608288"
+      ]
+    },
+    {
+      "name": "protein_triage",
+      "goal": "Rank translated ORFs and enzyme candidates for deeper structural follow-up.",
+      "engine": "Protein triage planner",
+      "outputs": [
+        "candidate enzymes",
+        "structure follow-up queue",
+        "interaction screening shortlist"
+      ],
+      "review_required": false,
+      "influences": [
+        "ProteinFoldingSimulation"
+      ],
+      "research_anchors": [
+        "https://doi.org/10.1038/s41586-024-07487-w",
+        "https://arxiv.org/abs/2602.04482"
+      ]
+    },
+    {
+      "name": "cell_free_prototyping",
+      "goal": "Design cell-free validation experiments using Deinococcus_radiodurans_extract, Bacillus_subtilis_extract to test candidate constructs before committing to full chassis engineering.",
+      "engine": "Cell-free experiment planner",
+      "outputs": [
+        "cfps_experiment_designs",
+        "rapid_screening_matrix",
+        "go_no_go_criteria",
+        "expected_yield_estimates"
+      ],
+      "review_required": true,
+      "influences": [
+        "Safe-SDL",
+        "AI-CFPS"
+      ],
+      "research_anchors": [
+        "https://doi.org/10.1021/acssynbio.4c00671",
+        "https://doi.org/10.1016/j.synbio.2025.01.003",
+        "https://doi.org/10.48550/arXiv.2602.15061"
+      ]
+    },
+    {
+      "name": "habitat_twin",
+      "goal": "Stress-test consortium behavior against habitat shocks and deployment conditions: radiation_burst, temperature_swing, dust_storm_occlusion, perchlorate_spike.",
+      "engine": "Habitat twin planner",
+      "outputs": [
+        "shock matrix",
+        "resilience hypotheses",
+        "failure mode checklist"
+      ],
+      "review_required": false,
+      "influences": [
+        "didactic-lamp",
+        "Habitat-Genome-Compiler"
+      ],
+      "research_anchors": [
+        "https://doi.org/10.1038/s44185-025-00116-3",
+        "https://arxiv.org/abs/2511.08571"
+      ]
+    },
+    {
+      "name": "multiobjective_frontier",
+      "goal": "Compute a Pareto frontier across mission tradeoffs to avoid collapsing the search into a single score. Frontier objectives: perchlorate_reduction_rate, radiation_survival_probability, energy_efficiency.",
+      "engine": "Pareto frontier planner",
+      "outputs": [
+        "pareto frontier candidates",
+        "tradeoff matrix",
+        "dominated candidate rejects",
+        "budget-aware follow-up recommendations"
+      ],
+      "review_required": true,
+      "influences": [
+        "Bayesian-Optimization",
+        "Habitat twin",
+        "Consortium control"
+      ],
+      "research_anchors": [
+        "https://doi.org/10.1002/bit.28929",
+        "https://doi.org/10.1016/j.bej.2025.109618",
+        "https://arxiv.org/abs/2511.08571"
+      ]
+    },
+    {
+      "name": "bayesian_experiment_design",
+      "goal": "Plan adaptive Bayesian optimization loops to maximize perchlorate_reduction_rate over search dimensions [temperature, UV_shielding, nutrient_concentration, water_activity] using expected_improvement acquisition with batch size 4 for up to 5e+23 iterations.",
+      "engine": "BO acquisition planner with cognitive digital twin",
+      "outputs": [
+        "experiment_arms",
+        "acquisition_function_policy",
+        "stopping_criteria",
+        "expected_improvement_surface",
+        "surrogate_model_spec"
+      ],
+      "review_required": true,
+      "influences": [
+        "Bayesian-Optimization",
+        "Cognitive-Digital-Twin"
+      ],
+      "research_anchors": [
+        "https://doi.org/10.1002/bit.28929",
+        "https://doi.org/10.1016/j.bej.2025.109618",
+        "https://doi.org/10.1016/j.bej.2024.109547"
+      ]
+    },
+    {
+      "name": "controller_design",
+      "goal": "Compile a BioControl DSL policy over the control surface: temperature, UV_shielding, nutrient_feed, water_recycling, atmospheric_mix, perchlorate_quench. Include sim-to-real transfer bridge from mars_analog_bioreactor to martian_regolith_in_situ.",
+      "engine": "BioControl DSL planner + Sim-to-Real Transfer Bridge",
+      "outputs": [
+        "controller templates",
+        "closed-loop observability plan",
+        "intervention escalation rules",
+        "domain_randomization_spec (mars_analog_bioreactor -> martian_regolith_in_situ)",
+        "transfer_gap_estimate",
+        "calibration_protocol (iterative_bayesian_alignment)",
+        "reality_gap_test_matrix"
+      ],
+      "review_required": true,
+      "influences": [
+        "NeuroPulse-CableLab",
+        "NeuroFusion-Reactor",
+        "Dual-DT-RL"
+      ],
+      "research_anchors": [
+        "https://doi.org/10.1038/s41586-025-08829-y",
+        "https://doi.org/10.1088/1741-4326/ae34c6",
+        "https://arxiv.org/abs/2511.08571",
+        "https://doi.org/10.3390/s25030601",
+        "https://doi.org/10.48550/arXiv.2502.14371"
+      ]
+    },
+    {
+      "name": "safety_red_team",
+      "goal": "Stress-test the proposed plan against misuse, blocked traits, autonomy creep, and hidden safety regressions. Disallowed traits: antibiotic_selection_marker, mammalian_pathogenicity_signal, uncontained_horizontal_gene_transfer.",
+      "engine": "Policy and refusal planner",
+      "outputs": [
+        "red-team scenarios",
+        "blocked action list",
+        "review escalation triggers",
+        "deployment refusal conditions"
+      ],
+      "review_required": true,
+      "influences": [
+        "Safe-SDL",
+        "Habitat-Genome-Compiler"
+      ],
+      "research_anchors": [
+        "https://doi.org/10.48550/arXiv.2602.15061",
+        "https://doi.org/10.1101/2024.08.16.608288"
+      ]
+    },
+    {
+      "name": "fair_provenance_bundle",
+      "goal": "Package the twin as a FAIR artifact bundle with explicit provenance, model lineage, and assay traceability targets for models, workflow_scripts, assay_data.",
+      "engine": "FAIR twin bundle planner",
+      "outputs": [
+        "artifact lineage graph",
+        "model and assay provenance bundle",
+        "twin fidelity checklist",
+        "reproducibility handoff pack"
+      ],
+      "review_required": false,
+      "influences": [
+        "FAIR digital twins",
+        "OmniForge",
+        "nexusflow"
+      ],
+      "research_anchors": [
+        "https://doi.org/10.1038/s44185-025-00116-3",
+        "https://doi.org/10.48550/arXiv.2602.15061"
+      ]
+    },
+    {
+      "name": "orchestration_and_review",
+      "goal": "Assemble the pipeline into an auditable run with artifacts, retries, and human review.",
+      "engine": "NexusFlow and OmniForge orchestration",
+      "outputs": [
+        "run manifest",
+        "review queue",
+        "artifact index"
+      ],
+      "review_required": true,
+      "influences": [
+        "nexusflow",
+        "OmniForge",
+        "Supermix_29"
+      ],
+      "research_anchors": [
+        "https://doi.org/10.48550/arXiv.2602.15061",
+        "https://doi.org/10.1038/s44185-025-00116-3"
+      ]
+    }
+  ],
+  "review_policy": {
+    "human_review_required": true,
+    "autonomous_deployment_allowed": false
+  },
+  "warnings": [
+    "Sim-to-real transfer is configured without an operational safety envelope."
+  ],
+  "recommended_next_steps": [
+    "Resolve the validation warnings before promoting any controller or genome proposal.",
+    "Run the declared cell-free validation matrix before organism-level engineering.",
+    "Calibrate the sim-to-real bridge in an Earth-analog or pilot chamber before deployment."
+  ],
+  "validation_ladder": [
+    {
+      "name": "in_silico_ranking",
+      "status": "ready",
+      "detail": "Foundation-model ranking and safety triage can proceed locally."
+    },
+    {
+      "name": "cell_free_validation",
+      "status": "required",
+      "detail": "Cell-free extracts are configured for fast validation."
+    },
+    {
+      "name": "analog_environment",
+      "status": "required",
+      "detail": "Analog chamber or structured habitat validation is needed before transfer."
+    },
+    {
+      "name": "controller_commit",
+      "status": "blocked",
+      "detail": "Controller commits should remain blocked until an operational envelope is defined."
+    },
+    {
+      "name": "pilot_deployment",
+      "status": "blocked",
+      "detail": "Deployment remains blocked by policy unless human review clears a staged pilot."
+    }
+  ],
+  "summary": {
+    "total_stages": 13,
+    "review_gates": 10,
+    "active_innovations": 8,
+    "research_anchors": 21,
+    "control_surface_count": 6,
+    "success_metric_count": 5
+  },
+  "preview_data": {
+    "pareto_frontier": [
+      {
+        "label": "Perchlorate reduction rate",
+        "x": 72,
+        "y": 89,
+        "r": 11
+      },
+      {
+        "label": "Radiation survival probability",
+        "x": 91,
+        "y": 94,
+        "r": 15
+      },
+      {
+        "label": "Energy efficiency",
+        "x": 84,
+        "y": 84,
+        "r": 15
+      }
+    ],
+    "counterfactual_map": [
+      {
+        "id": "CF-01",
+        "type": "Knockout",
+        "target": "What if we knockout the radiation response network",
+        "impact": "+12%",
+        "note": "Planner preview only. Use this as a review prompt, not empirical evidence."
+      },
+      {
+        "id": "CF-02",
+        "type": "Upregulate",
+        "target": "What if desiccation tolerance is overexpressed",
+        "impact": "+17%",
+        "note": "Planner preview only. Use this as a review prompt, not empirical evidence."
+      }
+    ]
+  }
+}

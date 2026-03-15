@@ -1,0 +1,115 @@
+{
+  "mission_id": "pfas_brine_frontier_001",
+  "name": "PFAS Brine Counterfactual Frontier Program",
+  "domain": "environmental_biodesign",
+  "objective": "Design a safe, uncertainty-aware PFAS brine polishing program with explicit what-if edit analysis, Pareto frontier ranking, and FAIR twin provenance.",
+  "environment": {
+    "site_type": "industrial_brine",
+    "temperature_c": 27,
+    "salinity_psu": 42,
+    "oxygenation": "microaerobic",
+    "shock_profile": [
+      "salinity_spike",
+      "toxin_surge",
+      "nutrient_drop",
+      "temperature_excursion"
+    ]
+  },
+  "constraints": {
+    "allowed_chassis": [
+      "Pseudomonas_putida",
+      "Bacillus_subtilis"
+    ],
+    "disallowed_traits": [
+      "antibiotic_selection_marker",
+      "mammalian_pathogenicity_signal",
+      "unbounded_horizontal_transfer"
+    ],
+    "containment_level": "strict",
+    "max_candidate_programs": 12
+  },
+  "control_surface": [
+    "pH",
+    "nutrient_feed",
+    "temperature",
+    "light_cycle",
+    "flow_rate",
+    "toxin_quench",
+    "oxygen_pulse"
+  ],
+  "success_metrics": [
+    "pfas_reduction",
+    "community_stability",
+    "energy_efficiency",
+    "controller_resilience",
+    "biosafety_margin"
+  ],
+  "safety_profile": {
+    "human_review_required": true,
+    "autonomous_deployment_allowed": false,
+    "notes": "Use model output for ranking, simulation, and staged validation only."
+  },
+  "ensemble_models": [
+    "Evo 2",
+    "AlphaGenome",
+    "GENErator"
+  ],
+  "epigenomic_targets": [
+    "pfas_response_promoters",
+    "stress_response_cre",
+    "efflux_regulators"
+  ],
+  "cell_free_chassis": [
+    "e_coli_extract",
+    "bacillus_extract"
+  ],
+  "bayesian_parameters": {
+    "objective_function": "maximize_pfas_reduction_under_energy_and_safety_constraints",
+    "search_dimensions": [
+      "nutrient_feed",
+      "flow_rate",
+      "oxygen_pulse",
+      "temperature"
+    ],
+    "acquisition_function": "expected_hypervolume_improvement",
+    "batch_size": 3,
+    "max_iterations": 18
+  },
+  "sim_to_real_config": {
+    "sim_environment": "habitat_twin_brine_reactor",
+    "real_environment": "pilot_scale_brine_reactor",
+    "calibration_strategy": "earth_analog_stepwise",
+    "transfer_validation": "bench_then_pilot",
+    "domain_randomization": {
+      "salinity_psu": "[38, 47]",
+      "temperature_c": "[22, 33]",
+      "toxin_load": "[0.7x, 1.4x]",
+      "sensor_noise": "[low, high]"
+    }
+  },
+  "counterfactual_questions": [
+    "What if stress-response promoters are strengthened while efflux burden is capped?",
+    "What if toxin-quench activation is delayed until salinity spike recovery?",
+    "What edits increase PFAS reduction without degrading community stability?"
+  ],
+  "pareto_objectives": [
+    "pfas_reduction",
+    "community_stability",
+    "energy_efficiency",
+    "biosafety_margin"
+  ],
+  "provenance_requirements": {
+    "bundle_targets": [
+      "data",
+      "models",
+      "workflows",
+      "assays"
+    ],
+    "twin_fidelity_metrics": [
+      "prediction_error",
+      "transfer_gap",
+      "controller_stability_margin"
+    ],
+    "assay_lineage_required": true
+  }
+}
